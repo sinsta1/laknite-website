@@ -192,6 +192,18 @@ document.querySelectorAll("[data-cat]").forEach(a => {
 const yr = document.getElementById("yr");
 if (yr) yr.textContent = new Date().getFullYear();
 
+/* ---- homepage hero slideshow: Men → Women → Kids ---- */
+const heroSlides = [...document.querySelectorAll(".hero-plates .hero-slide")];
+if (heroSlides.length > 1) {
+  let heroIndex = 0;
+  heroSlides.forEach((slide, index) => slide.classList.toggle("active", index === 0));
+  window.setInterval(() => {
+    heroSlides[heroIndex].classList.remove("active");
+    heroIndex = (heroIndex + 1) % heroSlides.length;
+    heroSlides[heroIndex].classList.add("active");
+  }, 3500);
+}
+
 /* ---- mobile menu ---- */
 const burger = document.getElementById("burger"), mnav = document.getElementById("mnav");
 if (burger && mnav) {
