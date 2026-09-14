@@ -93,7 +93,11 @@ async function saveEnquiry(req, res) {
 function serveFile(req, res, pathname) {
   const relative = pathname === "/" ? "index.html" : pathname.replace(/^\/+/, "");
   const file = path.resolve(ROOT, relative);
-  const publicFile = relative === "index.html" || relative.startsWith("images/") || relative.startsWith("catalogs/");
+  const publicFile = relative === "index.html" ||
+    /^[a-z0-9-]+\.html$/i.test(relative) ||
+    relative.startsWith("images/") ||
+    relative.startsWith("assets/") ||
+    relative.startsWith("catalogs/");
   if (!publicFile || !file.startsWith(ROOT + path.sep)) return sendJson(res, 404, { ok: false, message: "Not found" });
   fs.stat(file, (statError, stats) => {
     if (statError || !stats.isFile()) return sendJson(res, 404, { ok: false, message: "Not found" });

@@ -1,119 +1,166 @@
-# LAKNITE — website files
+# LAKNITE® — Winterwear Manufacturer Website (2026 structure update)
 
-- `index.html` — the whole website, one page with anchored sections
-- `images/` — the logo, the shawl photographs and the factory photographs
-- `catalogs/` — empty; drop catalog PDFs here
-
-The Node server serves the site and saves validated enquiry submissions to
-Supabase before opening WhatsApp.
-
-1. Create a free Supabase project.
-2. Open its SQL Editor and run `supabase.sql` from this folder.
-3. Copy `.env.example` to `.env` and add the project URL and server secret key.
-4. Load those environment variables and run `npm start`.
-
-PowerShell example:
-
-```powershell
-$env:SUPABASE_URL="https://your-project-ref.supabase.co"
-$env:SUPABASE_SECRET_KEY="your-server-secret-key"
-npm start
+```
+index.html          Homepage
+men.html            Men's department
+women.html          Women's department
+kids.html           Kids department
+assets/laknite.css  All styling, for all four pages
+assets/laknite.js   All behaviour + the four edit zones
+images/             Product photography, catalogue covers, factory, logos
+images/archive/     Older catalogue covers, no longer on the site
 ```
 
-Never put the secret key in `index.html` or commit `.env`.
-
-## Deploy free on Render
-
-1. Push this folder to a GitHub repository.
-2. In Render, choose **New > Blueprint** and connect that repository.
-3. Render reads `render.yaml`. Enter `SUPABASE_URL` and
-   `SUPABASE_SECRET_KEY` when prompted.
-4. Deploy, then verify `/api/health` and submit one test enquiry.
-
-The free Render service sleeps after inactivity, so the first visit after a
-quiet period can take about a minute. Upgrade later if instant wake-up matters.
+Open `index.html` in any browser. To publish, upload the whole folder to your
+hosting, or drag it into Netlify, Vercel or Cloudflare Pages.
 
 ---
 
-## 1. Your phone, WhatsApp and email
+## What changed
 
-Open `index.html`, search for `const LAKNITE` near the bottom, and change the four
-values. Every phone link, WhatsApp button and email link on the site updates from
-there.
+The site used to be one long page with every product on it. It is now a
+homepage plus three department pages.
+
+**Homepage** — hero, Trusted Since 1999, **Shop by Department** (three premium
+cards: Men, Women, Kids), Thermals, Product Experience Centre, Featured
+Collections, Why Choose LAKNITE, Manufacturing, Product Portfolio, Become a
+Dealer, About Us, Contact.
+
+**Each department page** — breadcrumb, department hero, sticky sub-navigation,
+eight Product Categories, Product Gallery with article numbers, Latest
+Catalogues with Download and Enquire buttons, three Seasonal Collections,
+a Download Catalogue / Product Enquiry band, and links across to the other two
+departments.
+
+Design language is unchanged: same charcoal, cream and bronze palette, same
+Bodoni Moda and Archivo typography, same sticky masthead, same hover and reveal
+behaviour, same WhatsApp wiring and dealer form.
+
+---
+
+## Editing the site
+
+Everything you are likely to change sits in four marked zones at the top of
+`assets/laknite.js`.
+
+### Zone 1 — your contact details
 
 ```js
 const LAKNITE = {
-  phone:    "+91 98765 43210",
-  whatsapp: "919876543210",   // country code + number, digits only
-  email:    "info@laknite.com",
-  address:  "Ludhiana, Punjab, India"
+  phone:     "+91 98765 43210",
+  whatsapp:  "919876543210",   // country code + number, digits only
+  email:     "info@laknite.com",
+  address:   "Ludhiana, Punjab, India",
+  instagram: "",               // paste your profile URL
+  facebook:  ""
 };
 ```
 
-WhatsApp buttons open a chat with a message already typed for the section the
-buyer clicked from, so you know what they were looking at.
+Change these once and every phone link, WhatsApp link, email link and address on
+all four pages updates. Instagram and Facebook icons stay inactive until you
+paste the URLs.
 
-## 2. Factory photographs
+### Zone 2 — images
 
-Your 15 factory photos are in place across the About section, the Manufacturing
-section, the factory gallery and the production-process timeline. They live in
-`images/` with descriptive names — `f-production-floor.jpg`, `f-knitting-cixing.jpg`,
-`f-inspection.jpg`, `f-folding.jpg` and so on — and are listed once in the `IMAGES`
-object inside `index.html`.
+Every picture is named once in the `IMAGES` object. Two ways to change one:
 
-To replace one, drop a new file into `images/` using the same filename; nothing
-else changes. To add more, add a line to `IMAGES`:
+- Replace the file in `images/` keeping the same filename, or
+- Point the key at a different filename.
 
-```js
-"f-warehouse": "images/f-warehouse.jpg"
-```
+Set a value to `""` and that slot renders as a clean placeholder instead of
+breaking. Placeholders are already styled and correctly sized, so the layout
+never collapses while you wait for photography.
 
-then add a tile to the gallery:
-
-```html
-<figure class="photo" tabindex="0" role="button"><img data-img="f-warehouse" alt="Warehouse"><figcaption>Warehouse</figcaption></figure>
-```
-
-Clicking any photo opens it full size. The photos were brightened slightly for
-the web. Two views the site does not have yet: the factory exterior with signage,
-and the office or sampling room — worth shooting when you get a chance.
-
-## 3. Shawl photographs
-
-Same system. Article photos are keyed by article number in `IMAGES`. To add an
-article to the featured grid, add a line to `ARTICLES`:
+### Zone 3 — catalogue PDFs
 
 ```js
-{ no:"8810", img:"8810", name:"Designer shawl", note:"Velvet finish" }
+const CATALOGUES = {
+  "W-1000": "",   // Men's Windcheater & Outerwear
+  "M-9500": "",   // Premium Mufflers
+  ...
+};
 ```
 
-and add `"8810": "images/8810.jpg"` to `IMAGES`.
+Paste a PDF URL against a series and its **Download** button becomes a real
+download. Left empty, the button opens WhatsApp asking for that catalogue by
+name — so no button is ever dead, whether or not you have PDFs online yet.
 
-## 4. Catalogs
+### Zone 4 — the third-party branded photographs
 
-Catalog cards no longer link to a PDF or an on-site viewer. Both buttons on each
-card open WhatsApp, so buyers have to reach you before they see the range. Every
-other button on the site does the same — header, hero, collections, articles,
-statistics and the enquiry form.
+Five of the photographs you sent show garments carrying other companies'
+trademarks:
 
-Each button carries its own pre-typed message naming what the buyer clicked, so
-the chat arrives with context ("Interested in: Luxury Pattern Shawls"). To change
-the wording, edit the `data-wa` attribute on that button, or the `reqMsg` function
-in the script for the Request Catalog buttons.
+| File | Mark on the garment | Slot |
+|---|---|---|
+| `m-hoodie-black.jpg` | adidas | Men · W-1310 |
+| `m-halfzip-sand.jpg` | adidas | Men · K-7020 |
+| `m-hoodie-colourblock.jpg` | Calvin Klein | Men · W-1360 |
+| `k-gilet-quilted.jpg` | Tommy Hilfiger | Kids · K-5620 |
+| `k-slippers.jpg` | Peppa Pig | Kids · M-9000 |
 
-## 5. Google Map
+The slots are built, written and sized, but they render as placeholders until
+you change one line:
 
-In the contact section, replace the block marked `data-slot="google-map"` with the
-embed code from Google Maps. Set the iframe to `width:100%;height:100%;border:0`.
+```js
+const SHOW_THIRD_PARTY_BRANDED = false;   // set to true to publish them
+```
 
-## 6. The enquiry form
+A website is public and indexed by Google, which makes it the easiest place in
+the world for a brand's legal team to find its own logo. The switch is left to
+you. If you send own-label shots of the same five articles, drop them into
+`images/` under the same filenames and everything appears with no other change.
 
-There is no server behind the form yet, so submitted details are packaged into a
-WhatsApp message the buyer sends you in one tap. To also receive them by email,
-connect the form to a service like Formspree, Web3Forms or your own script — the
-submit handler in `index.html` is marked with a comment showing where to post it.
+---
 
-## 7. Testimonials
+## Open image slots
 
-The three quotes are placeholders and marked with a comment in the HTML. Replace
-them with real buyer feedback once you have permission to use it.
+Four slots are deliberately empty and styled as placeholders, ready for uploads:
+
+| Slot | Page |
+|---|---|
+| Ladies Cardigan, K-4400 | Women · gallery |
+| Girls Winter Top, K-5400 | Kids · gallery |
+| Men's Knitwear catalogue cover | Men · catalogues |
+| Shawls & Stoles catalogue cover, S-8400 | Women · catalogues |
+| Kids Slippers catalogue cover, M-9000 | Kids · catalogues |
+
+Add the file to `images/`, name it in `IMAGES`, done.
+
+---
+
+## Photographs that were cleaned
+
+Three of the uploads had text burned into the image. Because the site prints the
+article number itself, in its own typeface, the burned-in versions were removed:
+
+- `w-shawl-s8411.jpg` — "Art no. S-8411" panel removed
+- `w-shawl-s8507.jpg` — "Art no. S-8507" panel removed
+- `k-boys-sweaters-5331.jpg` — "Art No - 5331 / Size - 24X36" block and the
+  "AI-generated content" watermark removed
+
+All sixteen uploads were resized to 1100 px wide and saved as progressive JPEG.
+Total image weight dropped from about 35 MB to 3.6 MB, which is the difference
+between a site that loads on a dealer's phone and one that does not.
+
+---
+
+## The dealer enquiry form
+
+There is no server behind it. A completed form opens WhatsApp with the name,
+business, city, phone, department and requirement already typed. To also receive
+leads by email, connect it to Formspree, Web3Forms or your own script — the
+submit handler in `assets/laknite.js` is marked with a comment showing exactly
+where to post the data.
+
+## Google Map
+
+In the contact section of `index.html`, replace the block marked
+`data-slot="google-map"` with your Google Maps embed iframe, set to
+`width:100%;height:100%;border:0`.
+
+## Adding a fourth department later
+
+Copy `men.html`, change the headings, the article tiles and the catalogue cards,
+add the page to the `NAV` list in the header of all four files, and add its card
+to the `depts` grid on the homepage. No build step, no framework, no dependencies
+beyond the two Google Fonts.
