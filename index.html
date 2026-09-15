@@ -3,286 +3,692 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LAKNITE® — Complete Winterwear Manufacturer for Men, Women &amp; Kids | Ludhiana</title>
-<meta name="description" content="LAKNITE is a winterwear manufacturer from Ludhiana, Punjab. Since 1999: thermal wear, hoodies, jackets, windcheaters, shawls, sweaters, caps, monkey caps, slippers and seasonal essentials for men, women and kids. Dealer and distributor enquiries welcome.">
-<meta name="keywords" content="winterwear manufacturer, winter apparel manufacturer, thermal wear manufacturer, men's winterwear manufacturer, women's winterwear manufacturer, kids winterwear manufacturer, winter clothing manufacturer, Ludhiana">
-<meta property="og:title" content="LAKNITE® — Complete Winterwear Manufacturer for Men, Women &amp; Kids | Ludhiana">
-<meta property="og:description" content="LAKNITE is a winterwear manufacturer from Ludhiana, Punjab. Since 1999: thermal wear, hoodies, jackets, windcheaters, shawls, sweaters, caps, monkey caps, slippers and seasonal essentials for men, women and kids. Dealer and distributor enquiries welcome.">
-<meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231A1C20'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='19' fill='%23F5F1E8' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
+<title>LAKNITE — Premium Women Winterwear Manufacturer &amp; Wholesale Supplier, Ludhiana</title>
+<meta name="description" content="LAKNITE is a premium women winterwear manufacturer and wholesale supplier from Ludhiana, Punjab. Delivering excellence since 1999 to retailers, wholesalers and distributors across India.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23101E33'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='19' fill='%23F3EFE7' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&family=Archivo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/laknite.css">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   LAKNITE — brand tokens
+   Navy + ivory taken from the LAKNITE wordmark, brass accent
+   for ledger rules, numerals and section markers.
+   ============================================================ */
+:root{
+  --navy:#101E33;
+  --navy-deep:#0A1526;
+  --navy-soft:#1C2C45;
+  --ivory:#F3EFE7;
+  --paper:#FCFAF6;
+  --brass:#A9834B;
+  --brass-lt:#CBB78F;
+  --slate:#59627A;
+  --rule:rgba(16,30,51,.13);
+  --rule-dk:rgba(203,183,143,.20);
+  --shell:1290px;
+  --serif:"Bodoni Moda",Didot,"Bodoni MT",Georgia,"Times New Roman",serif;
+  --sans:"Archivo","Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--navy);
+  font-family:var(--sans);font-size:16.5px;line-height:1.68;
+  font-weight:400;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+figure{margin:0}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+
+.shell{width:100%;max-width:var(--shell);margin:0 auto;padding:0 32px}
+section{position:relative}
+
+/* --- type --- */
+h1,h2,h3,h4{font-family:var(--serif);font-weight:500;margin:0;letter-spacing:-.005em}
+h2{font-size:clamp(30px,4vw,50px);line-height:1.1}
+h3{font-size:clamp(20px,2.2vw,26px);line-height:1.25}
+p{margin:0 0 18px}
+.lede{font-size:clamp(17px,1.5vw,19.5px);line-height:1.75;color:var(--slate);max-width:60ch}
+.dark .lede{color:rgba(243,239,231,.72)}
+
+.marker{
+  display:flex;align-items:center;gap:14px;
+  font-size:12.5px;letter-spacing:.16em;font-weight:600;
+  color:var(--brass);margin-bottom:22px;text-transform:uppercase;
+}
+.marker::before{content:"";width:34px;height:1px;background:var(--brass);opacity:.65}
+.head-block{max-width:66ch;margin-bottom:56px}
+.head-block p{margin-top:20px}
+
+/* --- buttons --- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:14px 26px;border-radius:2px;border:1px solid transparent;
+  font-size:12.5px;font-weight:600;letter-spacing:.11em;text-transform:uppercase;
+  transition:background .18s ease,color .18s ease,border-color .18s ease;
+  white-space:nowrap;
+}
+.btn-navy{background:var(--navy);color:var(--ivory);border-color:var(--navy)}
+.btn-navy:hover{background:var(--navy-deep)}
+.btn-brass{background:var(--brass);color:#fff;border-color:var(--brass)}
+.btn-brass:hover{background:#916f3c;border-color:#916f3c}
+.btn-line{border-color:var(--rule);color:var(--navy);background:transparent}
+.btn-line:hover{border-color:var(--navy);background:var(--navy);color:var(--ivory)}
+.btn-line-lt{border-color:rgba(203,183,143,.4);color:var(--ivory);background:transparent}
+.btn-line-lt:hover{background:var(--ivory);color:var(--navy);border-color:var(--ivory)}
+.btn-sm{padding:11px 16px;font-size:11px;letter-spacing:.09em}
+.wa-ico{width:15px;height:15px;fill:currentColor;flex:none}
+
+/* --- header --- */
+.masthead{
+  position:sticky;top:0;z-index:80;background:rgba(252,250,246,.94);
+  backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--rule);
+}
+.masthead .bar{display:flex;align-items:center;gap:30px;height:78px}
+.brand img{height:23px;width:auto}
+.brand small{
+  display:block;font-size:9.5px;letter-spacing:.24em;color:var(--brass);
+  margin-top:5px;font-weight:600;text-transform:uppercase;
+}
+.nav{display:flex;gap:30px;margin-left:auto}
+.nav a{font-size:14.5px;font-weight:500;color:var(--navy);padding:6px 0;position:relative}
+.nav a::after{
+  content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;
+  background:var(--brass);transition:right .25s ease;
+}
+.nav a:hover::after,.nav a.on::after{right:0}
+.head-cta{display:flex;gap:10px;align-items:center}
+.burger{display:none;background:none;border:1px solid var(--rule);border-radius:2px;padding:9px 11px;margin-left:auto}
+.burger span{display:block;width:19px;height:1.5px;background:var(--navy);margin:4px 0}
+.mobile-nav{display:none;border-top:1px solid var(--rule);background:var(--paper);padding:14px 0 26px}
+.mobile-nav.open{display:block}
+.mobile-nav a{display:block;padding:13px 0;border-bottom:1px solid var(--rule);font-size:16px}
+.mobile-nav .btn{display:flex;justify-content:center;width:100%;margin-top:16px;border-bottom:0}
+
+/* --- hero --- */
+.hero{
+  background:var(--navy);color:var(--ivory);position:relative;overflow:hidden;
+  padding:88px 0 0;
+}
+.hero::before{
+  content:"";position:absolute;inset:0;opacity:.5;
+  background:
+   repeating-linear-gradient(90deg,rgba(203,183,143,.055) 0 1px,transparent 1px 7px),
+   repeating-linear-gradient(0deg,rgba(203,183,143,.045) 0 1px,transparent 1px 7px);
+}
+.hero .shell{position:relative;z-index:2}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);gap:56px;align-items:end}
+.hero-copy{padding-bottom:70px}
+.hero-name{
+  font-family:var(--serif);font-size:clamp(58px,8.4vw,116px);line-height:.92;
+  font-weight:600;letter-spacing:.02em;margin:0 0 26px;
+}
+.hero-role{
+  font-size:clamp(19px,2.05vw,27px);font-family:var(--serif);font-weight:400;
+  line-height:1.35;color:var(--ivory);margin:0 0 14px;max-width:22ch;
+}
+.hero-since{
+  display:inline-block;font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--brass-lt);border-top:1px solid var(--rule-dk);padding-top:16px;margin-bottom:26px;font-weight:600;
+}
+.hero-copy p.lede{max-width:46ch;margin-bottom:34px}
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px}
+.hero-plates{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;align-items:end}
+.plate{position:relative;background:var(--navy-soft);overflow:hidden;border-radius:2px}
+.plate img{width:100%;height:100%;object-fit:cover}
+.hero-plates .plate{aspect-ratio:2/3}
+.hero-plates .plate:nth-child(2){margin-bottom:38px}
+.hero-plates .plate:nth-child(1),.hero-plates .plate:nth-child(3){margin-bottom:0}
+.hero-marks{
+  display:flex;flex-wrap:wrap;gap:14px 44px;border-top:1px solid var(--rule-dk);
+  margin-top:56px;padding:22px 0 26px;font-size:13.5px;color:rgba(243,239,231,.8);
+}
+.hero-marks span{display:flex;align-items:center;gap:9px}
+.hero-marks span::before{content:"";width:6px;height:6px;background:var(--brass);transform:rotate(45deg)}
+
+/* --- trust bar --- */
+.trustbar{background:var(--ivory);border-bottom:1px solid var(--rule)}
+.trustbar .row{display:grid;grid-template-columns:repeat(5,1fr)}
+.trustbar .cell{padding:34px 26px 32px;border-left:1px solid var(--rule)}
+.trustbar .cell:first-child{border-left:0;padding-left:0}
+.trustbar b{display:block;font-family:var(--serif);font-size:26px;font-weight:600;line-height:1.15}
+.trustbar em{display:block;font-style:normal;font-size:13.5px;color:var(--slate);margin-top:7px;line-height:1.5}
+
+/* --- generic section rhythm --- */
+.band{padding:110px 0}
+.band-tight{padding:86px 0}
+.dark{background:var(--navy);color:var(--ivory)}
+.dark .marker{color:var(--brass-lt)}
+.dark .marker::before{background:var(--brass-lt)}
+.tint{background:var(--ivory)}
+h2 + .lede{margin-top:20px}
+
+/* --- about --- */
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.06fr);gap:74px;align-items:center}
+.about-facts{border-top:1px solid var(--rule);margin-top:30px;padding-top:26px;display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.about-facts div b{display:block;font-family:var(--serif);font-size:23px;font-weight:600}
+.about-facts div span{font-size:13.5px;color:var(--slate)}
+
+/* --- image placeholder (swap for real photography) --- */
+.ph{
+  position:relative;background-color:var(--ivory);
+  background-image:repeating-linear-gradient(45deg,rgba(169,131,75,.055) 0 9px,transparent 9px 19px);
+  border:1px solid var(--rule);border-radius:2px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:26px;gap:8px;color:var(--slate);overflow:hidden;
+}
+.dark .ph{background-color:rgba(255,255,255,.035);background-image:repeating-linear-gradient(45deg,rgba(203,183,143,.07) 0 9px,transparent 9px 19px);border-color:var(--rule-dk);color:rgba(243,239,231,.66)}
+.ph b{font-family:var(--serif);font-size:19px;font-weight:500;color:var(--navy);letter-spacing:.01em}
+.dark .ph b{color:var(--ivory)}
+.ph i{font-style:normal;font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--brass)}
+.ph small{font-size:12.5px;line-height:1.5;max-width:34ch;opacity:.8}
+.about-media{display:grid;grid-template-columns:1.35fr 1fr;grid-template-rows:repeat(2,1fr);gap:12px;height:min(72vh,620px)}
+.about-media .ph:first-child{grid-row:span 2}
+
+/* --- advantages --- */
+.adv-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.adv{background:var(--paper);padding:38px 30px 34px;min-height:220px}
+.adv .n{font-family:var(--serif);font-size:13px;color:var(--brass);letter-spacing:.1em;display:block;margin-bottom:20px}
+.adv h3{font-size:20px;margin-bottom:10px}
+.adv p{font-size:14.5px;color:var(--slate);margin:0;line-height:1.62}
+.adv svg{width:26px;height:26px;stroke:var(--brass);fill:none;stroke-width:1.25;margin-bottom:18px;display:block}
+
+/* --- collections --- */
+.coll-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.coll{border:1px solid var(--rule);border-radius:2px;background:var(--paper);display:flex;flex-direction:column}
+.coll .shot{aspect-ratio:3/3.6;overflow:hidden;background:var(--ivory)}
+.coll .shot img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.3,1)}
+.coll:hover .shot img{transform:scale(1.035)}
+.coll .body{padding:26px 26px 28px;display:flex;flex-direction:column;flex:1}
+.coll h3{margin-bottom:9px}
+.coll p{font-size:14.5px;color:var(--slate);line-height:1.6;margin:0 0 22px}
+.coll .acts{display:flex;gap:9px;margin-top:auto;flex-wrap:wrap}
+.coll .acts .btn{flex:1 1 auto}
+
+/* --- products --- */
+.prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.prod{border:1px solid var(--rule);border-radius:2px;overflow:hidden;background:var(--paper)}
+.prod .shot{aspect-ratio:2/3;overflow:hidden;background:var(--ivory);position:relative;cursor:zoom-in}
+.prod .shot img{width:100%;height:100%;object-fit:cover}
+.prod .shot .zoom{
+  position:absolute;left:0;right:0;bottom:0;padding:12px 16px;font-size:11.5px;letter-spacing:.12em;
+  text-transform:uppercase;color:#fff;background:linear-gradient(transparent,rgba(10,21,38,.78));
+  opacity:0;transition:opacity .25s ease;
+}
+.prod .shot:hover .zoom,.prod .shot:focus-visible .zoom{opacity:1}
+.prod .meta{padding:18px 20px;border-top:1px solid var(--rule);display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.prod .meta b{font-family:var(--serif);font-size:20px;font-weight:600}
+.prod .meta span{font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--brass);text-align:right}
+.prod .acts{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule);border-top:1px solid var(--rule)}
+.prod .acts button{
+  background:var(--paper);border:0;padding:14px 6px;font-size:11px;letter-spacing:.09em;
+  text-transform:uppercase;font-weight:600;color:var(--navy);transition:background .18s ease,color .18s ease;
+}
+.prod .acts button:hover{background:var(--navy);color:var(--ivory)}
+
+/* --- manufacturing --- */
+.mfg-media{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:56px}
+.mfg-media .ph{aspect-ratio:4/3.1}
+.mfg-list{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;margin-top:52px;border-top:1px solid var(--rule-dk);padding-top:36px}
+.mfg-list h4{font-size:19px;margin-bottom:8px}
+.mfg-list p{font-size:14.5px;color:rgba(243,239,231,.72);margin:0}
+
+/* --- factory gallery --- */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gal .ph{aspect-ratio:3/4}
+.gal-note{
+  margin-top:26px;font-size:13.5px;color:var(--slate);border-left:2px solid var(--brass);
+  padding:6px 0 6px 16px;max-width:70ch;
+}
+
+/* --- process timeline --- */
+.proc{display:grid;grid-template-columns:repeat(6,1fr);gap:0;border-top:1px solid var(--rule)}
+.proc .step{padding:30px 22px 34px;border-right:1px solid var(--rule);position:relative}
+.proc .step:last-child{border-right:0}
+.proc .step::before{
+  content:"";position:absolute;top:-5px;left:0;width:9px;height:9px;background:var(--brass);
+  transform:rotate(45deg);
+}
+.proc .step em{font-style:normal;font-size:12px;letter-spacing:.14em;color:var(--brass);font-weight:600}
+.proc .step h4{font-size:19px;margin:12px 0 10px}
+.proc .step p{font-size:13.5px;color:var(--slate);margin:0 0 18px;line-height:1.58}
+.proc .ph{aspect-ratio:4/3;padding:14px}
+
+/* --- journey --- */
+.journey{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--rule-dk);margin-top:20px}
+.journey .yr{padding:36px 24px 10px;border-right:1px solid var(--rule-dk);position:relative}
+.journey .yr:last-child{border-right:0}
+.journey .yr::before{content:"";position:absolute;top:-6px;left:0;width:11px;height:11px;border-radius:50%;background:var(--brass)}
+.journey .yr b{display:block;font-family:var(--serif);font-size:38px;font-weight:600;line-height:1;margin-bottom:14px}
+.journey .yr p{font-size:14.5px;color:rgba(243,239,231,.74);margin:0}
+
+/* --- catalogs --- */
+.cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.cat{border:1px solid var(--rule);border-radius:2px;background:var(--paper);display:flex;flex-direction:column}
+.cat .cover{position:relative;aspect-ratio:3/3.7;overflow:hidden;background:var(--navy)}
+.cat .cover img{width:100%;height:100%;object-fit:cover;object-position:center 22%;opacity:.94}
+.cat .cover .tag{
+  position:absolute;top:0;left:0;z-index:2;background:var(--navy);color:var(--ivory);
+  padding:10px 16px;font-size:11px;letter-spacing:.13em;text-transform:uppercase;font-weight:600;
+}
+.cat .cover .plate-name{
+  position:absolute;left:0;right:0;bottom:0;padding:22px 20px;color:#fff;
+  background:linear-gradient(transparent,rgba(10,21,38,.86));
+}
+.cat .cover .plate-name b{font-family:var(--serif);font-size:24px;font-weight:600;display:block}
+.cat .cover .plate-name span{font-size:12.5px;opacity:.82}
+.cat .body{padding:22px;display:flex;flex-direction:column;gap:9px;flex:1}
+.cat .body p{font-size:14px;color:var(--slate);margin:0 0 6px}
+.cat .row2{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.cat-msg{font-size:12.5px;color:var(--brass);min-height:19px;line-height:1.4}
+
+/* --- stats --- */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule-dk);border:1px solid var(--rule-dk)}
+.stat{background:var(--navy);padding:44px 28px}
+.stat b{display:block;font-family:var(--serif);font-size:clamp(42px,5vw,66px);font-weight:600;line-height:1;color:var(--ivory)}
+.stat span{display:block;margin-top:12px;font-size:13.5px;letter-spacing:.06em;color:var(--brass-lt)}
+.capacity{
+  margin-top:20px;border:1px solid var(--rule-dk);padding:30px 34px;display:flex;
+  gap:26px;align-items:center;justify-content:space-between;flex-wrap:wrap;
+}
+.capacity h4{font-size:23px}
+.capacity p{margin:6px 0 0;font-size:14.5px;color:rgba(243,239,231,.72);max-width:56ch}
+
+/* --- testimonials --- */
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.quote{border:1px solid var(--rule);border-radius:2px;padding:34px 30px;background:var(--paper);display:flex;flex-direction:column}
+.quote .mark{font-family:var(--serif);font-size:52px;line-height:.6;color:var(--brass);margin-bottom:18px}
+.quote p{font-size:16px;line-height:1.7;margin:0 0 24px}
+.quote footer{margin-top:auto;border-top:1px solid var(--rule);padding-top:16px}
+.quote footer b{display:block;font-size:14.5px}
+.quote footer span{font-size:13px;color:var(--slate)}
+
+/* --- lead form --- */
+.lead{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:70px;align-items:start}
+.lead-points{list-style:none;margin:30px 0 0;padding:0;border-top:1px solid var(--rule-dk)}
+.lead-points li{padding:16px 0 16px 26px;border-bottom:1px solid var(--rule-dk);font-size:15px;position:relative;color:rgba(243,239,231,.82)}
+.lead-points li::before{content:"";position:absolute;left:0;top:26px;width:9px;height:1px;background:var(--brass)}
+form.enq{background:var(--paper);color:var(--navy);padding:40px;border-radius:2px}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.field{display:flex;flex-direction:column;gap:7px}
+.field.wide{grid-column:span 2}
+.field label{font-size:12.5px;letter-spacing:.06em;font-weight:600;color:var(--slate)}
+.field input,.field textarea,.field select{
+  font:inherit;font-size:15px;padding:13px 14px;border:1px solid var(--rule);
+  border-radius:2px;background:#fff;color:var(--navy);width:100%;
+}
+.field textarea{resize:vertical;min-height:96px}
+.field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--brass)}
+.field .err{font-size:12.5px;color:#9d3427;min-height:16px}
+form.enq .btn{width:100%;margin-top:22px;padding:17px}
+.form-foot{font-size:12.5px;color:var(--slate);margin:16px 0 0;text-align:center}
+.done{display:none;background:var(--paper);color:var(--navy);padding:56px 40px;border-radius:2px;text-align:center}
+.done.show{display:block}
+.done .tick{width:52px;height:52px;border-radius:50%;border:1px solid var(--brass);display:grid;place-items:center;margin:0 auto 22px}
+.done .tick svg{width:22px;height:22px;stroke:var(--brass);fill:none;stroke-width:1.6}
+.done h3{margin-bottom:12px}
+.done p{color:var(--slate);max-width:46ch;margin:0 auto 24px}
+.done .btn{margin:0 6px 8px}
+
+/* --- contact --- */
+.contact-grid{display:grid;grid-template-columns:1fr;gap:40px;align-items:start}
+.cinfo{border-top:1px solid var(--rule)}
+.cinfo .r{display:grid;grid-template-columns:118px 1fr;gap:20px;padding:20px 0;border-bottom:1px solid var(--rule);align-items:baseline}
+.cinfo .r dt{font-size:12.5px;letter-spacing:.08em;color:var(--brass);font-weight:600;text-transform:uppercase}
+.cinfo .r dd{margin:0;font-size:16px}
+.cinfo .r dd small{display:block;font-size:13.5px;color:var(--slate);margin-top:3px}
+
+/* --- footer --- */
+.foot{background:var(--navy-deep);color:var(--ivory);padding:78px 0 0}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:50px;padding-bottom:56px}
+.foot img.mark{height:26px;margin-bottom:20px}
+.foot p{font-size:14.5px;color:rgba(243,239,231,.66);margin:0 0 10px;max-width:38ch}
+.foot h5{font-family:var(--serif);font-size:17px;font-weight:500;margin:0 0 18px}
+.foot ul{list-style:none;margin:0;padding:0}
+.foot ul li{margin-bottom:11px}
+.foot ul a{font-size:14.5px;color:rgba(243,239,231,.7)}
+.foot ul a:hover{color:var(--brass-lt)}
+.foot-base{border-top:1px solid var(--rule-dk);padding:24px 0 34px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px;color:rgba(243,239,231,.5)}
+
+/* --- floating whatsapp --- */
+.wa-float{
+  position:fixed;right:22px;bottom:22px;z-index:70;background:#1f8a4c;color:#fff;
+  display:flex;align-items:center;gap:10px;padding:14px 20px;border-radius:40px;
+  box-shadow:0 10px 30px rgba(10,21,38,.28);font-size:13px;font-weight:600;letter-spacing:.05em;
+}
+.wa-float svg{width:19px;height:19px;fill:#fff}
+.wa-float:hover{background:#177040}
+
+/* --- lightbox --- */
+.lb{position:fixed;inset:0;z-index:120;background:rgba(10,21,38,.94);display:none;align-items:center;justify-content:center;padding:36px}
+.lb.open{display:flex}
+.lb img{max-height:88vh;max-width:min(92vw,620px);border-radius:2px}
+.lb .close{position:absolute;top:22px;right:26px;background:none;border:1px solid rgba(243,239,231,.35);color:var(--ivory);border-radius:2px;padding:9px 15px;font-size:12px;letter-spacing:.1em}
+.lb .cap{position:absolute;bottom:26px;left:0;right:0;text-align:center;color:var(--ivory);font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+
+/* --- reveal (single orchestrated hero load) --- */
+.rise{opacity:0;transform:translateY(18px);animation:rise .9s cubic-bezier(.2,.7,.3,1) forwards}
+.rise:nth-child(2){animation-delay:.08s}
+@keyframes rise{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .rise{opacity:1;transform:none}
+}
+
+/* --- responsive --- */
+@media(max-width:1080px){
+  .nav,.head-cta{display:none}
+  .burger{display:block}
+  .hero-grid{grid-template-columns:1fr;gap:44px}
+  .hero-copy{padding-bottom:0}
+  .split,.lead,.contact-grid{grid-template-columns:1fr;gap:44px}
+  .adv-grid{grid-template-columns:repeat(2,1fr)}
+  .coll-grid,.prod-grid,.cat-grid,.quotes{grid-template-columns:repeat(2,1fr)}
+  .proc{grid-template-columns:repeat(3,1fr)}
+  .proc .step:nth-child(3n){border-right:0}
+  .journey{grid-template-columns:repeat(2,1fr)}
+  .journey .yr{border-bottom:1px solid var(--rule-dk)}
+  .trustbar .row{grid-template-columns:repeat(2,1fr)}
+  .trustbar .cell{border-left:0;border-top:1px solid var(--rule);padding-left:0;padding-right:18px}
+  .trustbar .cell:nth-child(-n+2){border-top:0}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .gal{grid-template-columns:repeat(2,1fr)}
+  .mfg-list{grid-template-columns:1fr 1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .about-media{height:auto;grid-template-rows:auto}
+  .about-media .ph{min-height:190px}
+}
+@media(max-width:720px){
+  .shell{padding:0 20px}
+  .band{padding:74px 0}
+  .band-tight{padding:60px 0}
+  .hero{padding-top:56px}
+  .hero-plates{gap:8px}
+  .hero-plates .plate:nth-child(2){margin-bottom:18px}
+  .coll-grid,.prod-grid,.cat-grid,.quotes,.mfg-list,.foot-grid,.adv-grid{grid-template-columns:1fr}
+  .proc{grid-template-columns:1fr}
+  .proc .step{border-right:0;border-bottom:1px solid var(--rule)}
+  .journey{grid-template-columns:1fr}
+  .journey .yr{border-right:0}
+  .stats{grid-template-columns:1fr 1fr}
+  .mfg-media{grid-template-columns:1fr}
+  .mfg-media .ph{aspect-ratio:4/3}
+  .gal{grid-template-columns:1fr}
+
+  .fgrid{grid-template-columns:1fr}
+  .field.wide{grid-column:span 1}
+  form.enq{padding:26px}
+  .wa-float span{display:none}
+  .wa-float{padding:15px;border-radius:50%}
+  .hero-marks{gap:10px 26px;font-size:12.5px}
+}
+
+/* --- factory photography (replaces the earlier placeholder blocks) --- */
+.photo{display:block;position:relative;overflow:hidden;border-radius:2px;background:var(--ivory);cursor:zoom-in;margin:0}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform .9s cubic-bezier(.2,.7,.3,1)}
+.photo:hover img{transform:scale(1.045)}
+.photo figcaption{
+  position:absolute;left:0;right:0;bottom:0;padding:36px 16px 13px;color:#fff;
+  font-size:11.5px;letter-spacing:.11em;text-transform:uppercase;
+  background:linear-gradient(transparent,rgba(10,21,38,.88));pointer-events:none;
+}
+.about-media > .photo:first-child{grid-row:span 2}
+.mfg-media{grid-template-columns:repeat(3,1fr)}
+.mfg-media .photo{aspect-ratio:3/4}
+.gal{grid-template-columns:repeat(4,1fr)}
+.gal .photo{aspect-ratio:3/4}
+.gal .photo.lead{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+.proc .step-shot{aspect-ratio:5/4}
+.proc .step-shot figcaption{display:none}
+
+@media(max-width:1080px){
+  .gal{grid-template-columns:repeat(2,1fr)}
+  .mfg-media{grid-template-columns:repeat(3,1fr)}
+  .about-media{grid-template-columns:1.3fr 1fr}
+  .about-media .photo{min-height:190px}
+  .about-media > .photo:first-child{min-height:400px}
+}
+@media(max-width:720px){
+  .gal{grid-template-columns:1fr 1fr}
+  .gal .photo.lead{grid-column:span 2;grid-row:span 1;aspect-ratio:4/3}
+  .mfg-media{grid-template-columns:1fr 1fr}
+  .mfg-media .photo:first-child{grid-column:span 2;aspect-ratio:4/3}
+  .about-media{grid-template-columns:1fr 1fr}
+  .about-media > .photo:first-child{grid-column:span 2;grid-row:span 1;min-height:0;aspect-ratio:4/3}
+  .about-media .photo{aspect-ratio:3/4;min-height:0}
+}
+
+/* Hero: one sharp portrait at a time */
+.hero-plates.hero-slider{position:relative;display:block;height:clamp(420px,43vw,600px);overflow:hidden;padding:0}
+.hero-slider .hero-slide,.hero-slider .hero-slide:nth-child(2){position:absolute;inset:0;margin:auto;width:auto;max-width:min(72%,430px);height:100%;aspect-ratio:2/3;opacity:0;visibility:hidden;transform:translateX(32px) scale(.97);transition:opacity .7s ease,transform .7s ease,visibility .7s;box-shadow:0 22px 50px rgba(0,0,0,.24);will-change:opacity,transform}
+.hero-slider .hero-slide img{object-fit:contain;background:#cbb296}
+.hero-slider .hero-slide.active{opacity:1;visibility:visible;transform:translateX(0) scale(1);z-index:1}
+@media(max-width:640px){.hero-plates.hero-slider{height:480px}.hero-slider .hero-slide,.hero-slider .hero-slide:nth-child(2){max-width:320px}}
+@media (prefers-reduced-motion:reduce){.hero-slider .hero-slide{transition:none!important}}
+</style>
 </head>
 <body>
 <!-- ================= HEADER ================= -->
 <header class="masthead">
   <div class="shell">
     <div class="bar">
-      <a class="brand" href="index.html" aria-label="LAKNITE home">
-        <img data-img="logo-charcoal" alt="LAKNITE">
-        <small>Quality. Style. Trust.</small>
+      <a class="brand" href="#home" aria-label="LAKNITE home">
+        <img data-img="logo-navy" alt="LAKNITE">
+        <small>Ludhiana, Punjab</small>
       </a>
       <nav class="nav" aria-label="Primary">
-        <a href="index.html" class="on">Home</a>
-        <a href="men.html">Men</a>
-        <a href="women.html">Women</a>
-        <a href="kids.html">Kids</a>
-        <a href="index.html#thermals">Thermals</a>
-        <a href="index.html#manufacturing">Manufacturing</a>
-        <a href="index.html#catalogues">Catalogues</a>
-        <a href="index.html#about">About Us</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="#home" class="on">Home</a>
+        <a href="#collections">Collections</a>
+        <a href="#manufacturing">Manufacturing</a>
+        <a href="#catalogs">Catalogs</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </nav>
       <div class="head-cta">
-        <a class="btn btn-solid btn-sm" href="index.html#dealer">Become a Dealer</a>
-        <a class="btn btn-line btn-sm wa" href="#" data-wa="Hello LAKNITE, I would like to know about your winterwear range.">
+        <a class="btn btn-navy btn-sm" href="#request" data-req="Wholesale catalog request">Request Catalog</a>
+        <a class="btn btn-line btn-sm wa" href="#" data-wa="Hello LAKNITE, I would like to know about your wholesale women winterwear range.">
           <svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.8-.6-3.1-1.3-5.1-4.4-5.3-4.6-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .7.5l.9 2.2c.1.2.1.4 0 .6l-.4.6-.3.3c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l.9-1c.2-.2.4-.2.6-.1l2.1 1c.3.1.5.2.5.4.1.1.1.6 0 1.1Z"/></svg>
           WhatsApp
         </a>
       </div>
-      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <button class="burger" aria-label="Open menu" aria-expanded="false" id="burger"><span></span><span></span><span></span></button>
     </div>
   </div>
   <div class="mobile-nav shell" id="mnav">
-    <a href="index.html">Home</a>
-    <a href="men.html">Men</a>
-    <a href="women.html">Women</a>
-    <a href="kids.html">Kids</a>
-    <a href="index.html#thermals">Thermals</a>
-    <a href="index.html#manufacturing">Manufacturing</a>
-    <a href="index.html#catalogues">Catalogues</a>
-    <a href="index.html#about">About Us</a>
-    <a href="index.html#contact">Contact</a>
-    <a class="btn btn-solid" href="index.html#dealer">Become a Dealer</a>
-    <a class="btn btn-line wa" href="#" data-wa="Hello LAKNITE, I would like to know about your winterwear range.">WhatsApp Now</a>
+    <a href="#home">Home</a>
+    <a href="#collections">Collections</a>
+    <a href="#manufacturing">Manufacturing</a>
+    <a href="#catalogs">Catalogs</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a class="btn btn-navy" href="#request" data-req="Wholesale catalog request">Request Catalog</a>
+    <a class="btn btn-line wa" href="#" data-wa="Hello LAKNITE, I would like to know about your wholesale women winterwear range.">WhatsApp Now</a>
   </div>
 </header>
+
 <main>
 <!-- ================= HERO ================= -->
 <section class="hero" id="home">
   <div class="shell">
     <div class="hero-grid">
-      <div class="rise">
-        <div class="hero-name">LAKNITE<sup>®</sup></div>
-        <div class="hero-tag">Quality. Style. Trust. · Since 1999</div>
-        <h1>Complete Winterwear Solutions</h1>
-        <p class="lede">Since 1999, LAKNITE has been manufacturing premium winterwear, thermal wear, fashion accessories and seasonal essentials for Men, Women and Kids.</p>
+      <div class="hero-copy rise">
+        <h1 class="hero-name">LAKNITE</h1>
+        <p class="hero-role">Premium women winterwear manufacturer and wholesale supplier</p>
+        <span class="hero-since">Delivering excellence since 1999</span>
+        <p class="lede">Manufacturing elegant women winterwear for retailers, wholesalers and distributors across India — produced in our own Ludhiana facility, season after season.</p>
         <div class="hero-btns">
-          <a class="btn btn-bronze" href="#departments">Shop by Department</a>
-          <a class="btn btn-line-lt" href="#dealer">Become a Dealer</a>
+          <a class="btn btn-brass" href="#request" data-req="Wholesale catalog request">Request Catalog</a>
+          <a class="btn btn-line-lt wa" href="#" data-wa="Hello LAKNITE, I saw your website and would like your wholesale women winterwear catalog.">
+            <svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.8-.6-3.1-1.3-5.1-4.4-5.3-4.6-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .7.5l.9 2.2c.1.2.1.4 0 .6l-.4.6-.3.3c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l.9-1c.2-.2.4-.2.6-.1l2.1 1c.3.1.5.2.5.4.1.1.1.6 0 1.1Z"/></svg>
+            WhatsApp Now
+          </a>
         </div>
       </div>
-      <div class="hero-plates rise" aria-label="LAKNITE winterwear departments">
-        <figure class="plate hero-slide"><img data-img="m-halfzip-clean" alt="LAKNITE men's winter half-zip knitwear"></figure>
-        <figure class="plate hero-slide"><img data-img="w-beanie-pink" alt="LAKNITE women's winter cap"></figure>
-        <figure class="plate hero-slide"><img data-img="k-monkey-cap-bear" alt="LAKNITE kids bear-ear monkey cap set"></figure>
+      <div class="hero-plates hero-slider rise" aria-label="LAKNITE women winterwear collection">
+        <figure class="plate hero-slide"><img data-img="hero-fur-cape" alt="LAKNITE beige fur cape"></figure>
+        <figure class="plate hero-slide"><img data-img="8805" alt="LAKNITE luxury pattern women winterwear, article 8805"></figure>
+        <figure class="plate hero-slide"><img data-img="hero-fur-collar" alt="LAKNITE open-knit women winterwear with fur collar"></figure>
       </div>
     </div>
     <div class="hero-marks">
-      <span>Men · Women · Kids</span>
-      <span>Thermal innerwear</span>
-      <span>In-house manufacturing</span>
-      <span>Bulk supply across India</span>
+      <span>Since 1999</span>
+      <span>Direct manufacturer</span>
+      <span>Bulk orders</span>
+      <span>Pan India supply</span>
     </div>
   </div>
 </section>
 
-<!-- ================= TRUST ================= -->
-<section class="trust">
+<!-- ================= TRUST BAR ================= -->
+<section class="trustbar">
   <div class="shell">
-    <div class="top">
-      <div class="marker">Trusted since 1999</div>
-      <h2>Two decades of winterwear, season after season.</h2>
-      <p class="lede" style="margin-top:18px">For more than two decades, LAKNITE has been delivering quality winterwear collections through innovation, craftsmanship and dependable manufacturing.</p>
-    </div>
-    <div class="grid">
-      <div class="cell"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Established in 1999</div>
-      <div class="cell"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Complete winterwear expertise</div>
-      <div class="cell"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>In-house manufacturing</div>
-      <div class="cell"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Multi-category product range</div>
-      <div class="cell"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Trusted by retailers &amp; distributors</div>
-      <div class="cell"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Quality-focused production</div>
-    </div>
-    <div class="actions">
-      <a class="btn btn-solid" href="#departments">Shop by department</a>
-      <a class="btn btn-line wa" href="#" data-wa="Hello LAKNITE, please share your winterwear catalogues.">Request catalogues</a>
+    <div class="row">
+      <div class="cell"><b>25+ Years</b><em>Experience in women winterwear manufacturing</em></div>
+      <div class="cell"><b>Since 1999</b><em>Delivering excellence, season on season</em></div>
+      <div class="cell"><b>Factory Direct</b><em>Supplied from our own production floor</em></div>
+      <div class="cell"><b>Pan India</b><em>Distribution to every major market</em></div>
+      <div class="cell"><b>500+ Designs</b><em>Refreshed every winter season</em></div>
     </div>
   </div>
 </section>
 
-<!-- ================= DEPARTMENTS ================= -->
-<section class="band" id="departments">
-  <div class="shell">
-    <div class="head-block">
-      <div class="marker">Shop by department</div>
-      <h2>Three departments. One winter supplier.</h2>
-      <p class="lede">Men, Women and Kids each run as their own catalogue — separate article series, separate shade cards, separate size charts. Open a department to see its full range, gallery and catalogues.</p>
-    </div>
-    <div class="depts">
-      <a class="dept" href="men.html" aria-label="Open the men's department">
-        <div class="shot">
-          <img data-img="m-halfzip-clean" alt="LAKNITE men's winterwear">
-          <div class="tagplate"><div class="kicker">Department 01</div><b>Men</b></div>
-        </div>
-        <div class="body">
-          <p>Windcheaters, padded jackets and hooded gilets alongside hoodies, knitwear, mufflers and the thermal range.</p>
-          <ul><li>Windcheaters</li><li>Jackets</li><li>Hoodies</li><li>Knitwear</li><li>Mufflers</li><li>Thermals</li><li>Caps</li></ul>
-          <div class="go">Enter the men's department <svg viewBox="0 0 26 9" aria-hidden="true"><path d="M0 4.5h24M20 1l4 3.5-4 3.5"/></svg></div>
-        </div>
-      </a>
-      <a class="dept" href="women.html" aria-label="Open the women's department">
-        <div class="shot">
-          <img data-img="w-beanie-pink" alt="LAKNITE women's winter cap">
-          <div class="tagplate"><div class="kicker">Department 02</div><b>Women</b></div>
-        </div>
-        <div class="body">
-          <p>Shawls and stoles, fancy capes and ponchos, ladies caps, sweaters and cardigans — including the embroidered occasion range.</p>
-          <ul><li>Shawls</li><li>Stoles</li><li>Capes</li><li>Ponchos</li><li>Cardigans</li><li>Ladies caps</li><li>Thermals</li></ul>
-          <div class="go">Enter the women's department <svg viewBox="0 0 26 9" aria-hidden="true"><path d="M0 4.5h24M20 1l4 3.5-4 3.5"/></svg></div>
-        </div>
-      </a>
-      <a class="dept" href="kids.html" aria-label="Open the kids' department">
-        <div class="shot">
-          <img data-img="k-monkey-cap-bear" alt="LAKNITE kids's winterwear">
-          <div class="tagplate"><div class="kicker">Department 03</div><b>Kids</b></div>
-        </div>
-        <div class="body">
-          <p>Monkey caps and balaclavas, boys and girls winter tops, quilted gilets, indoor slippers and kids thermals.</p>
-          <ul><li>Monkey caps</li><li>Winter tops</li><li>Sweaters</li><li>Gilets</li><li>Slippers</li><li>Thermals</li></ul>
-          <div class="go">Enter the kids' department <svg viewBox="0 0 26 9" aria-hidden="true"><path d="M0 4.5h24M20 1l4 3.5-4 3.5"/></svg></div>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ================= THERMALS ================= -->
-<section class="band-tight tint" id="thermals">
+<!-- ================= ABOUT ================= -->
+<section class="band" id="about">
   <div class="shell split">
-    <figure class="frame thermal-frame" style="aspect-ratio:4/3.1">
-      <img data-img="c-thermal" alt="LAKNITE thermal innerwear collection">
-      <figcaption>Thermal innerwear · T-6000 series</figcaption>
-    </figure>
     <div>
-      <div class="marker">Across all three departments</div>
-      <h2>Thermal innerwear, the flagship range.</h2>
-      <p class="lede" style="margin-top:18px">The T-6000 series runs through every department — men, women and kids — on one shade card and one quality standard. Vests, tops, long johns and full sets in six shades, S to XXL, packed in dozens.</p>
-      <ul class="ticks">
-        <li>Six shades, one card</li>
-        <li>S to XXL, kids 20 to 40</li>
-        <li>Brushed-back interlock</li>
-        <li>Packed in dozens</li>
-        <li>Men · Women · Kids</li>
-        <li>Year-round production</li>
-      </ul>
-      <div class="hero-btns" style="margin-top:28px">
-        <a class="btn btn-solid" href="#" data-cat="T-6000" data-cat-name="Thermal Innerwear T-6000">Download Catalogue</a>
-        <a class="btn btn-line wa" href="#" data-wa="Hello LAKNITE, please share your Thermal Innerwear (T-6000) range and rates.">Enquire</a>
+      <div class="marker">About LAKNITE</div>
+      <h2>A women winterwear brand built on repeat orders, not one-time sales.</h2>
+      <p class="lede" style="margin-top:22px">LAKNITE is a premium women winterwear manufacturing and wholesale brand based in Ludhiana, Punjab.</p>
+      <p class="lede">For more than two decades we have supplied retailers, wholesalers and distributors with quality women winterwear designed for Indian markets. Our focus is craftsmanship, dependable supply and long-term business relationships.</p>
+      <div class="about-facts">
+        <div><b>Ludhiana, Punjab</b><span>Own manufacturing unit</span></div>
+        <div><b>Wholesale only</b><span>Retailers, distributors, chain stores</span></div>
+        <div><b>Season-ready stock</b><span>Planned ahead of winter demand</span></div>
+        <div><b>Consistent quality</b><span>Checked at every production stage</span></div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- ================= EXPERIENCE CENTRE ================= -->
-<section class="band-tight">
-  <div class="shell split">
-    <figure class="frame" style="aspect-ratio:4/3.1">
-      <img data-img="showroom" alt="LAKNITE collection display at the Ludhiana experience centre">
-      <figcaption>Our collection display, Ludhiana</figcaption>
-    </figure>
-    <div>
-      <div class="marker">Product experience centre</div>
-      <h2>Explore the LAKNITE collection.</h2>
-      <p class="lede" style="margin-top:18px">Discover a complete winterwear range featuring jackets, hoodies, thermals, shawls, sweaters, monkey caps, slippers, caps and seasonal essentials designed for every age group.</p>
-      <ul class="ticks">
-        <li>Wide product portfolio</li>
-        <li>Modern seasonal collections</li>
-        <li>Fashion-forward designs</li>
-        <li>Bulk availability</li>
-        <li>Dealer-friendly inventory</li>
-        <li>Reliable supply</li>
-      </ul>
+    <!-- Factory photographs. To change one, swap the file path in the IMAGES list at the bottom of this file. -->
+    <div class="about-media">
+      <figure class="photo" tabindex="0" role="button"><img data-img="f-stitching-hall" alt="LAKNITE stitching floor in Ludhiana"><figcaption>Stitching floor, Ludhiana</figcaption></figure>
+      <figure class="photo" tabindex="0" role="button"><img data-img="f-pressing" alt="Women Winterwear being pressed and finished"><figcaption>Finishing</figcaption></figure>
+      <figure class="photo" tabindex="0" role="button"><img data-img="f-cone-winding" alt="Yarn cone winding machines"><figcaption>Yarn winding</figcaption></figure>
     </div>
   </div>
 </section>
 
-<!-- ================= FEATURED COLLECTIONS ================= -->
-<section class="band tint" id="catalogues">
+<!-- ================= WHY RETAILERS TRUST ================= -->
+<section class="band-tight tint">
   <div class="shell">
     <div class="head-block">
-      <div class="marker">Featured collections</div>
-      <h2>Season 2026-27 catalogues.</h2>
-      <p class="lede">Each collection runs as its own series with article numbers, shade options and packing details. Open a collection to reach its department, or ask us for the PDF.</p>
+      <div class="marker">Why retailers trust LAKNITE</div>
+      <h2>Eight reasons buyers keep coming back each season.</h2>
     </div>
-    <div class="colls">
-      <a class="coll" href="men.html#catalogues">
-        <span class="series">W-1000 Series</span>
-        <img data-img="c-men" alt="Men's Winter Collection">
-        <span class="label"><b>Men's Winter Collection</b><span>Hoodies · Jackets · Windcheaters</span></span>
-      </a>
-      <a class="coll" href="men.html#gallery">
-        <span class="series">M-9500 Series</span>
-        <img data-img="m-mufflers-four" alt="Premium Mufflers">
-        <span class="label"><b>Premium Mufflers</b><span>Woven checks &amp; herringbone</span></span>
-      </a>
-      <a class="coll" href="#thermals">
-        <span class="series">T-6000 Series</span>
-        <img data-img="m-thermal-vest" alt="Thermal Innerwear">
-        <span class="label"><b>Thermal Innerwear</b><span>Men · Women · Kids</span></span>
-      </a>
-      <a class="coll" href="women.html#catalogues">
-        <span class="series">L-8000 Series</span>
-        <img data-img="c-ladies" alt="Ladies Caps">
-        <span class="label"><b>Ladies Caps</b><span>Winter caps for every woman</span></span>
-      </a>
-      <a class="coll" href="women.html#gallery">
-        <span class="series">P-3200 Series</span>
-        <img data-img="w-cape-fur" alt="Capes &amp; Ponchos">
-        <span class="label"><b>Capes &amp; Ponchos</b><span>Lattice knits · Fur trims</span></span>
-      </a>
-      <a class="coll" href="women.html#gallery">
-        <span class="series">S-8400 Series</span>
-        <img data-img="w-shawl-s8411" alt="Shawls &amp; Stoles">
-        <span class="label"><b>Shawls &amp; Stoles</b><span>Plain · Embroidered · Occasion</span></span>
-      </a>
-      <a class="coll" href="kids.html#catalogues">
-        <span class="series">C-2000 Series</span>
-        <img data-img="c-monkey" alt="Kids Monkey Caps">
-        <span class="label"><b>Kids Monkey Caps</b><span>Warm, soft, skin friendly</span></span>
-      </a>
-      <a class="coll" href="kids.html#gallery">
-        <span class="series">K-5300 Series</span>
-        <img data-img="k-boys-sweaters" alt="Boys Winter Tops">
-        <span class="label"><b>Boys Winter Tops</b><span>Premium knitted sweaters</span></span>
-      </a>
-    </div>
-    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:34px">
-      <a class="btn btn-solid" href="#" data-cat="FULL" data-cat-name="complete 2026-27">Download Complete Catalogue</a>
-      <a class="btn btn-line wa" href="#" data-wa="Hello LAKNITE, I would like the complete winterwear catalogue set for 2026-27.">Request the full set</a>
+    <div class="adv-grid">
+      <article class="adv"><svg viewBox="0 0 24 24"><path d="M12 3v18M4 8h16M4 16h16"/></svg><h3>25+ years experience</h3><p>Manufacturing women winterwear without a break since 1999.</p></article>
+      <article class="adv"><svg viewBox="0 0 24 24"><path d="M3 20V9l9-5 9 5v11M9 20v-6h6v6"/></svg><h3>Direct manufacturer</h3><p>You buy from the factory, with no layer of middlemen in between.</p></article>
+      <article class="adv"><svg viewBox="0 0 24 24"><path d="M12 3l2.4 5.6L20 10l-4 4 1 6-5-2.8L7 20l1-6-4-4 5.6-1.4Z"/></svg><h3>Premium women winterwear designs</h3><p>A design studio that develops fresh articles for every winter line.</p></article>
+      <article class="adv"><svg viewBox="0 0 24 24"><path d="M4 7h16v12H4zM4 7l2-3h12l2 3M9 12h6"/></svg><h3>Bulk production capability</h3><p>Volume orders handled without slipping on finish or timelines.</p></article>
+      <article class="adv"><svg viewBox="0 0 24 24"><path d="M2 8h11v8H2zM13 11h5l3 3v2h-8zM6.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM17.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/></svg><h3>Reliable dispatch</h3><p>Packed and booked on schedule so your shelves fill before the season peaks.</p></article>
+      <article class="adv"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18"/></svg><h3>Pan India supply</h3><p>Regular consignments to traders and chain stores across ten-plus states.</p></article>
+      <article class="adv"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg><h3>Consistent quality</h3><p>Same weight, same shade, same finish — first order to fiftieth.</p></article>
+      <article class="adv"><svg viewBox="0 0 24 24"><path d="M9 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM3 20c0-3 2.7-5 6-5s6 2 6 5M16 6a3 3 0 0 1 0 6M18 20c0-2-.6-3.4-1.6-4.4"/></svg><h3>Long-term relationships</h3><p>Most of our buyers have been with us for more than a decade.</p></article>
     </div>
   </div>
 </section>
 
-<!-- ================= WHY CHOOSE ================= -->
-<section class="band-tight">
+<!-- ================= COLLECTIONS ================= -->
+<section class="band" id="collections">
   <div class="shell">
     <div class="head-block">
-      <div class="marker">Why choose LAKNITE</div>
-      <h2>Ten reasons buyers stay with us.</h2>
+      <div class="marker">Women Winterwear collections</div>
+      <h2>Six ranges, built for different counters and different price points.</h2>
+      <p class="lede">Every range is available for bulk booking with assorted colours and article-wise packing. Request the catalog for the full article list.</p>
     </div>
-    <div class="why">
-      <div><span class="n">01</span><h4>Since 1999</h4></div>
-      <div><span class="n">02</span><h4>In-house manufacturing</h4></div>
-      <div><span class="n">03</span><h4>Consistent quality standards</h4></div>
-      <div><span class="n">04</span><h4>Trend-focused product development</h4></div>
-      <div><span class="n">05</span><h4>Dealer &amp; distributor support</h4></div>
-      <div><span class="n">06</span><h4>Wide product portfolio</h4></div>
-      <div><span class="n">07</span><h4>Reliable supply chain</h4></div>
-      <div><span class="n">08</span><h4>Bulk production capability</h4></div>
-      <div><span class="n">09</span><h4>Experienced team</h4></div>
-      <div><span class="n">10</span><h4>Seasonal collection updates</h4></div>
+    <div class="coll-grid">
+      <article class="coll">
+        <div class="shot"><img data-img="8809" alt="Premium designer women winterwear in brown with dense embroidery"></div>
+        <div class="body">
+          <h3>Premium Designer Women Winterwear</h3>
+          <p>Heavy embroidered velvet-finish women winterwear for wedding and gifting counters.</p>
+          <div class="acts">
+            <a class="btn btn-navy btn-sm" href="#request" data-req="Premium Designer Women Winterwear">Request Catalog</a>
+            <a class="btn btn-line btn-sm wa" href="#" data-wa="Hello LAKNITE, please share the wholesale price list for your Premium Designer Women Winterwear range.">Ask Price</a>
+          </div>
+        </div>
+      </article>
+      <article class="coll">
+        <div class="shot"><img data-img="8407" alt="Classic women winterwear in yellow with woven leaf border"></div>
+        <div class="body">
+          <h3>Classic Women Winterwear</h3>
+          <p>Woven border women winterwear in everyday winter shades — the steady seller of any season.</p>
+          <div class="acts">
+            <a class="btn btn-navy btn-sm" href="#request" data-req="Classic Women Winterwear">Request Catalog</a>
+            <a class="btn btn-line btn-sm wa" href="#" data-wa="Hello LAKNITE, please share the wholesale price list for your Classic Women Winterwear range.">Ask Price</a>
+          </div>
+        </div>
+      </article>
+      <article class="coll">
+        <div class="shot"><img data-img="1302" alt="Soft wool blend women winterwear in pink with diamond weave"></div>
+        <div class="body">
+          <h3>Soft Wool Blend Women Winterwear</h3>
+          <p>Light, warm blends with a soft handle, made for daily wear and volume selling.</p>
+          <div class="acts">
+            <a class="btn btn-navy btn-sm" href="#request" data-req="Soft Wool Blend Women Winterwear">Request Catalog</a>
+            <a class="btn btn-line btn-sm wa" href="#" data-wa="Hello LAKNITE, please share the wholesale price list for your Soft Wool Blend Women Winterwear range.">Ask Price</a>
+          </div>
+        </div>
+      </article>
+      <article class="coll">
+        <div class="shot"><img data-img="8805" alt="Luxury pattern women winterwear in deep red with ogee embroidery"></div>
+        <div class="body">
+          <h3>Luxury Pattern Women Winterwear</h3>
+          <p>Large-repeat ogee and jaal patterns in rich shades for premium display counters.</p>
+          <div class="acts">
+            <a class="btn btn-navy btn-sm" href="#request" data-req="Luxury Pattern Women Winterwear">Request Catalog</a>
+            <a class="btn btn-line btn-sm wa" href="#" data-wa="Hello LAKNITE, please share the wholesale price list for your Luxury Pattern Women Winterwear range.">Ask Price</a>
+          </div>
+        </div>
+      </article>
+      <article class="coll">
+        <div class="shot"><img data-img="8401" alt="Fashion stole in pink with embroidered motifs"></div>
+        <div class="body">
+          <h3>Fashion Women Winterwear</h3>
+          <p>Lighter stoles and drapes in current shades, aimed at younger buyers.</p>
+          <div class="acts">
+            <a class="btn btn-navy btn-sm" href="#request" data-req="Fashion Women Winterwear">Request Catalog</a>
+            <a class="btn btn-line btn-sm wa" href="#" data-wa="Hello LAKNITE, please share the wholesale price list for your Fashion Women Winterwear range.">Ask Price</a>
+          </div>
+        </div>
+      </article>
+      <article class="coll">
+        <div class="shot"><img data-img="hero-fur-cape" alt="Best selling beige fur cape from the LAKNITE women winterwear collection"></div>
+        <div class="body">
+          <h3>Best Seller Collection</h3>
+          <p>The articles our buyers repeat every year, kept in ready stock through the season.</p>
+          <div class="acts">
+            <a class="btn btn-navy btn-sm" href="#request" data-req="Best Seller Collection">Request Catalog</a>
+            <a class="btn btn-line btn-sm wa" href="#" data-wa="Hello LAKNITE, please share the wholesale price list for your Best Seller Collection.">Ask Price</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURED PRODUCTS ================= -->
+<section class="band-tight tint">
+  <div class="shell">
+    <div class="head-block">
+      <div class="marker">Featured articles</div>
+      <h2>Current season articles.</h2>
+      <p class="lede">A short selection from the running line. Full shade cards and article-wise details are shared with the catalog.</p>
+    </div>
+    <div class="prod-grid" id="prodGrid">
+      <!-- product cards are generated from the ARTICLES list in the script below -->
     </div>
   </div>
 </section>
@@ -292,78 +698,193 @@
   <div class="shell">
     <div class="head-block">
       <div class="marker">Manufacturing</div>
-      <h2>From design to delivery.</h2>
-      <p class="lede">Knitting, cutting, stitching, finishing, inspection and packing run under our own roof in Ludhiana. We are a manufacturer, not a trading house — which is how quality and delivery stay in our hands.</p>
+      <h2>Manufacturing excellence since 1999.</h2>
+      <p class="lede">Combining craftsmanship, quality control and dependable production processes to ensure reliable wholesale supply.</p>
     </div>
-    <div class="proc">
-      <div class="step"><div class="shot"><img data-img="f-yarn-winding" alt="Yarn selection and product development"></div>
-        <em>Stage 01</em><h4>Product development</h4><p>Artwork, yarn and shade decided for the season's articles.</p></div>
-      <div class="step"><div class="shot"><img data-img="f-knitting-cixing" alt="Computerised knitting"></div>
-        <em>Stage 02</em><h4>Knitting</h4><p>Computerised flat knitting against the booked quantity.</p></div>
-      <div class="step"><div class="shot"><img data-img="f-cutting-press" alt="Cutting"></div>
-        <em>Stage 03</em><h4>Cutting</h4><p>Panels cut to size and prepared for the stitching line.</p></div>
-      <div class="step"><div class="shot"><img data-img="f-stitching-hall" alt="Stitching hall"></div>
-        <em>Stage 04</em><h4>Stitching</h4><p>Assembly, overlock and finishing operations on the floor.</p></div>
-      <div class="step"><div class="shot"><img data-img="f-pressing" alt="Finishing and pressing"></div>
-        <em>Stage 05</em><h4>Finishing</h4><p>Washing, pressing and trims bring each piece to its final handle.</p></div>
-      <div class="step"><div class="shot"><img data-img="f-inspection" alt="Quality inspection"></div>
-        <em>Stage 06</em><h4>Quality inspection</h4><p>Weight, size, shade and finish checked piece by piece.</p></div>
-      <div class="step"><div class="shot"><img data-img="f-folding" alt="Packaging"></div>
-        <em>Stage 07</em><h4>Packaging</h4><p>Article-wise packing with labels prepared for your counter.</p></div>
-      <div class="step"><div class="shot"><img data-img="f-material-store" alt="Dispatch store"></div>
-        <em>Stage 08</em><h4>Dispatch</h4><p>Booked through your preferred transport with documents shared.</p></div>
+    <div class="mfg-media">
+      <figure class="photo" tabindex="0" role="button"><img data-img="f-production-floor" alt="LAKNITE production floor"><figcaption>Production floor</figcaption></figure>
+      <figure class="photo" tabindex="0" role="button"><img data-img="f-knitting-cixing" alt="Computerised flat knitting machine"><figcaption>Computerised knitting</figcaption></figure>
+      <figure class="photo" tabindex="0" role="button"><img data-img="f-yarn-prep" alt="Yarn preparation and doubling"><figcaption>Yarn preparation</figcaption></figure>
+    </div>
+    <div class="mfg-list">
+      <div><h4>In-house production</h4><p>Knitting, embroidery and finishing run under one roof, so timelines stay in our hands.</p></div>
+      <div><h4>Checked at every stage</h4><p>Yarn, weight, shade and finish are inspected before a lot moves forward.</p></div>
+      <div><h4>Planned for the season</h4><p>Capacity is booked ahead of winter so repeat orders ship without a wait.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ================= PORTFOLIO ================= -->
+<!-- ================= FACTORY GALLERY ================= -->
 <section class="band">
   <div class="shell">
     <div class="head-block">
-      <div class="marker">Product portfolio</div>
-      <h2>Everything we manufacture.</h2>
+      <div class="marker">Factory gallery</div>
+      <h2>Inside the unit.</h2>
+      <p class="lede">Our Ludhiana facility, from raw yarn through knitting, finishing and packing. Tap any photograph to see it larger.</p>
     </div>
-    <div class="port">
-      <section>
-        <h3><a href="men.html">Men's Winterwear</a></h3>
-        <div class="sub">Outerwear &amp; knits</div>
-        <ul><li>Windcheaters &amp; jackets</li><li>Hooded gilets</li><li>Hoodies &amp; sweatshirts</li><li>Knitwear</li><li>Mufflers &amp; caps</li></ul>
-      </section>
-      <section>
-        <h3><a href="women.html">Women's Winterwear</a></h3>
-        <div class="sub">Knitwear &amp; drapes</div>
-        <ul><li>Shawls &amp; stoles</li><li>Occasion shawls</li><li>Capes &amp; ponchos</li><li>Sweaters &amp; cardigans</li><li>Ladies caps</li></ul>
-      </section>
-      <section>
-        <h3><a href="kids.html">Kids Winterwear</a></h3>
-        <div class="sub">Warm essentials</div>
-        <ul><li>Monkey caps</li><li>Boys winter tops</li><li>Girls winter tops</li><li>Quilted gilets</li><li>Indoor slippers</li></ul>
-      </section>
-      <section>
-        <h3><a href="#thermals">Thermal Innerwear</a></h3>
-        <div class="sub">Flagship category</div>
-        <ul><li>Men</li><li>Women</li><li>Kids</li><li>Six shades · S to XXL</li></ul>
-      </section>
+    <div class="gal">
+      <figure class="photo lead" tabindex="0" role="button"><img data-img="f-production-floor" alt="Main production floor stacked with finished women winterwear"><figcaption>Production floor</figcaption></figure>
+      <figure class="photo" tabindex="0" role="button"><img data-img="f-knitting-cixing" alt="Computerised flat knitting machine running"><figcaption>Computerised knitting</figcaption></figure>
+      <figure class="photo" tabindex="0" role="button"><img data-img="f-knitting-flat" alt="Flat knitting machine with finished women winterwear"><figcaption>Knitting floor</figcaption></figure>
+      <figure class="photo" tabindex="0" role="button"><img data-img="f-knitting-fabric" alt="Women Winterwear fabric coming off the knitting machine"><figcaption>Fabric off the machine</figcaption></figure>
+      <figure class="photo" tabindex="0" role="button"><img data-img="f-yarn-winding" alt="Yarn cone winding with red acrylic yarn"><figcaption>Yarn winding</figcaption></figure>
+      <figure class="photo" tabindex="0" role="button"><img data-img="f-cone-winding" alt="Cone winding machines"><figcaption>Cone section</figcaption></figure>
+      <figure class="photo" tabindex="0" role="button"><img data-img="f-yarn-prep" alt="Yarn doubling and twisting machine"><figcaption>Yarn preparation</figcaption></figure>
+      <figure class="photo" tabindex="0" role="button"><img data-img="f-material-store" alt="Raw material store with packed yarn bales"><figcaption>Material store</figcaption></figure>
+      <figure class="photo" tabindex="0" role="button"><img data-img="f-washing" alt="Washing area with tubs and hydro extractor"><figcaption>Washing</figcaption></figure>
+      <figure class="photo" tabindex="0" role="button"><img data-img="f-drying" alt="Industrial drying machine"><figcaption>Drying</figcaption></figure>
+      <figure class="photo" tabindex="0" role="button"><img data-img="f-cutting-press" alt="Cutting and pressing table"><figcaption>Cutting &amp; pressing</figcaption></figure>
+      <figure class="photo" tabindex="0" role="button"><img data-img="f-pressing" alt="Worker pressing a finished women winterwear"><figcaption>Pressing</figcaption></figure>
+      <figure class="photo" tabindex="0" role="button"><img data-img="f-stitching-hall" alt="Stitching hall with overlock machines"><figcaption>Stitching hall</figcaption></figure>
+      <figure class="photo" tabindex="0" role="button"><img data-img="f-inspection" alt="Worker checking finished women winterwear"><figcaption>Quality checking</figcaption></figure>
+      <figure class="photo" tabindex="0" role="button"><img data-img="f-folding" alt="Folding and packing table with stacked women winterwear"><figcaption>Folding &amp; packing</figcaption></figure>
     </div>
   </div>
 </section>
 
-<!-- ================= DEALER PROGRAM ================= -->
-<section class="band dark" id="dealer">
+<!-- ================= PRODUCTION PROCESS ================= -->
+<section class="band-tight tint">
+  <div class="shell">
+    <div class="head-block">
+      <div class="marker">Production process</div>
+      <h2>How an order moves through the floor.</h2>
+    </div>
+    <div class="proc">
+      <div class="step"><em>Stage 1</em><h4>Design development</h4><p>Artwork, yarn and shade decided for the season's articles.</p><figure class="photo step-shot"><img data-img="f-yarn-winding" alt="Shade and yarn selection"></figure></div>
+      <div class="step"><em>Stage 2</em><h4>Manufacturing</h4><p>Knitting and embroidery run against the booked quantity.</p><figure class="photo step-shot"><img data-img="f-knitting-flat" alt="Knitting"></figure></div>
+      <div class="step"><em>Stage 3</em><h4>Finishing</h4><p>Washing, pressing and border work bring the piece to its final handle.</p><figure class="photo step-shot"><img data-img="f-washing" alt="Washing and finishing"></figure></div>
+      <div class="step"><em>Stage 4</em><h4>Quality inspection</h4><p>Weight, size, shade and finish checked piece by piece.</p><figure class="photo step-shot"><img data-img="f-inspection" alt="Checking"></figure></div>
+      <div class="step"><em>Stage 5</em><h4>Packaging</h4><p>Article-wise packing with labels prepared for the buyer's counter.</p><figure class="photo step-shot"><img data-img="f-folding" alt="Folding and packing"></figure></div>
+      <div class="step"><em>Stage 6</em><h4>Dispatch</h4><p>Booked through the buyer's preferred transport with documents shared.</p><figure class="photo step-shot"><img data-img="f-material-store" alt="Packed and ready"></figure></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMPANY JOURNEY ================= -->
+<section class="band dark">
+  <div class="shell">
+    <div class="head-block">
+      <div class="marker">Company journey</div>
+      <h2>Twenty-five years, one trade.</h2>
+    </div>
+    <div class="journey">
+      <div class="yr"><b>1999</b><p>LAKNITE established in Ludhiana as a women winterwear manufacturing unit.</p></div>
+      <div class="yr"><b>2005</b><p>Production expanded with added machinery and a larger seasonal line.</p></div>
+      <div class="yr"><b>2012</b><p>Distribution widened to markets across northern and central India.</p></div>
+      <div class="yr"><b>2018</b><p>Retail network grew as chain stores and regional traders came on board.</p></div>
+      <div class="yr"><b>2026</b><p>A trusted women winterwear manufacturing partner for buyers across the country.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CATALOGS ================= -->
+<section class="band" id="catalogs">
+  <div class="shell">
+    <div class="head-block">
+      <div class="marker">Catalogs</div>
+      <h2>Explore our latest women winterwear collections.</h2>
+      <p class="lede">Catalogs carry article numbers, shade options and packing details. Message us on WhatsApp and we will send the current catalog and price list for your market.</p>
+    </div>
+    <div class="cat-grid">
+      <article class="cat">
+        <div class="cover">
+          <span class="tag">Winter 2026</span>
+          <img data-img="8809" alt="Cover of the LAKNITE designer women winterwear catalog">
+          <div class="plate-name"><b>Designer Women Winterwear</b><span>Embroidered &amp; velvet-finish articles</span></div>
+        </div>
+        <div class="body">
+          <p>Heavy work articles for wedding and gifting counters.</p>
+          <a class="btn btn-navy btn-sm wa" href="#" data-wa="Hello LAKNITE, please send the Designer Women Winterwear catalog for Winter 2026 on WhatsApp.">Request Catalog</a>
+          <a class="btn btn-line btn-sm wa" href="#" data-wa="Hello LAKNITE, please share the wholesale price list for the Designer Women Winterwear range.">Request Price List</a>
+        </div>
+      </article>
+      <article class="cat">
+        <div class="cover">
+          <span class="tag">Winter 2026</span>
+          <img data-img="8704" alt="Cover of the LAKNITE woollen women winterwear catalog">
+          <div class="plate-name"><b>Woollen Classics</b><span>Everyday women winterwear &amp; stoles</span></div>
+        </div>
+        <div class="body">
+          <p>Volume articles in staple shades for regular counter sale.</p>
+          <a class="btn btn-navy btn-sm wa" href="#" data-wa="Hello LAKNITE, please send the Woollen Classics catalog for Winter 2026 on WhatsApp.">Request Catalog</a>
+          <a class="btn btn-line btn-sm wa" href="#" data-wa="Hello LAKNITE, please share the wholesale price list for the Woollen Classics range.">Request Price List</a>
+        </div>
+      </article>
+      <article class="cat">
+        <div class="cover">
+          <span class="tag">Wholesale</span>
+          <img data-img="8705" alt="Cover of the LAKNITE bulk supply catalog">
+          <div class="plate-name"><b>Bulk Supply Range</b><span>Assorted lots for distributors</span></div>
+        </div>
+        <div class="body">
+          <p>Mixed-article lots put together for distributors and chain stores.</p>
+          <a class="btn btn-navy btn-sm wa" href="#" data-wa="Hello LAKNITE, please send the Bulk Supply Range catalog on WhatsApp.">Request Catalog</a>
+          <a class="btn btn-line btn-sm wa" href="#" data-wa="Hello LAKNITE, please share the wholesale price list for the Bulk Supply Range.">Request Price List</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATISTICS ================= -->
+<section class="band-tight dark">
+  <div class="shell">
+    <div class="stats" id="stats">
+      <div class="stat"><b data-count="25" data-suffix="+">0</b><span>Years of experience</span></div>
+      <div class="stat"><b data-count="500" data-suffix="+">0</b><span>Designs developed</span></div>
+      <div class="stat"><b data-count="100" data-suffix="+">0</b><span>Retail partners</span></div>
+      <div class="stat"><b data-count="10" data-suffix="+">0</b><span>States served</span></div>
+    </div>
+    <div class="capacity">
+      <div>
+        <h4>Large production capacity</h4>
+        <p>Seasonal capacity planned in advance so bulk bookings and repeat orders are dispatched on time.</p>
+      </div>
+      <a class="btn btn-line-lt" href="#request" data-req="Bulk order capacity enquiry">Discuss a bulk order</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<!-- Replace the three quotes below with real buyer feedback when you have it. -->
+<section class="band-tight tint">
+  <div class="shell">
+    <div class="head-block">
+      <div class="marker">Buyer feedback</div>
+      <h2>Trusted by retailers across India.</h2>
+    </div>
+    <div class="quotes">
+      <figure class="quote">
+        <div class="mark">&ldquo;</div>
+        <p>The quality stays the same in every lot. That is the reason we have not changed our women winterwear supplier in eleven years.</p>
+        <footer><b>Retail buyer</b><span>Garment store, Uttar Pradesh</span></footer>
+      </figure>
+      <figure class="quote">
+        <div class="mark">&ldquo;</div>
+        <p>Bulk orders reach us before the season starts. Their dispatch planning is what keeps our counters stocked in December.</p>
+        <footer><b>Wholesale distributor</b><span>Delhi</span></footer>
+      </figure>
+      <figure class="quote">
+        <div class="mark">&ldquo;</div>
+        <p>Designs sell well at our price point and repeat articles are always available. Dealing with the factory directly makes it simple.</p>
+        <footer><b>Regional trader</b><span>Madhya Pradesh</span></footer>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LEAD GENERATION ================= -->
+<section class="band dark" id="request">
   <div class="shell lead">
     <div>
-      <div class="marker">Dealer programme</div>
-      <h2>Become a LAKNITE dealer.</h2>
-      <p class="lede" style="margin-top:18px">Partner with LAKNITE and access a complete winterwear range backed by manufacturing expertise, quality control and dependable supply.</p>
-      <ul class="ticks">
-        <li>Bulk ordering</li>
-        <li>Wide product range</li>
-        <li>Dealer support</li>
-        <li>Competitive business terms</li>
-        <li>Reliable inventory</li>
-        <li>Seasonal product launches</li>
-        <li>Nationwide supply</li>
-        <li>Reply within one working day</li>
+      <div class="marker">Wholesale enquiry</div>
+      <h2>Request our wholesale catalog.</h2>
+      <p class="lede">Fill this in and WhatsApp opens with your details ready to send. We reply with the current catalog, article details and packing information for your market.</p>
+      <ul class="lead-points">
+        <li>Catalog shared on WhatsApp with wholesale and retail businesses only</li>
+        <li>Article-wise details, shades and packing information</li>
+        <li>Price list shared after your requirement is confirmed</li>
+        <li>Reply usually within one working day</li>
       </ul>
     </div>
     <div>
@@ -397,82 +918,49 @@
             <span class="err" data-err="phone"></span>
           </div>
           <div class="field">
-            <label for="f-cat">Departments of interest</label>
-            <select id="f-cat" name="category">
-              <option>All departments</option><option>Men's winterwear</option><option>Women's winterwear</option>
-              <option>Kids winterwear</option><option>Thermal innerwear</option><option>Caps &amp; mufflers</option>
-            </select>
+            <label for="f-wa">WhatsApp number</label>
+            <input id="f-wa" name="whatsapp" type="tel" inputmode="numeric">
+            <span class="err" data-err="whatsapp"></span>
           </div>
           <div class="field wide">
             <label for="f-req">Requirement</label>
-            <textarea id="f-req" name="requirement" placeholder="Approximate quantity, the markets you serve and anything else we should know."></textarea>
+            <textarea id="f-req" name="requirement" placeholder="Collections you are interested in, approximate quantity and your market."></textarea>
+            <span class="err" data-err="requirement"></span>
           </div>
         </div>
-        <button class="btn btn-bronze" type="submit">Send On WhatsApp</button>
-        <p class="form-foot">Prefer to talk first? <a href="#" class="wa" data-wa="Hello LAKNITE, I would like to discuss a dealership." style="color:var(--bronze);font-weight:600">Message us on WhatsApp</a></p>
+        <button class="btn btn-brass" type="submit">Send On WhatsApp</button>
+        <p class="form-foot">Prefer to talk first? <a href="#" class="wa" data-wa="Hello LAKNITE, I would like to discuss a wholesale requirement." style="color:var(--brass);font-weight:600">Message us on WhatsApp</a></p>
       </form>
       <div class="done" id="done" role="status" aria-live="polite">
         <div class="tick"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
-        <h3>Enquiry ready</h3>
-        <p id="doneLine">WhatsApp is opening with your details ready to send.</p>
-        <a class="btn btn-bronze wa" href="#" id="doneWa" data-wa="Hello LAKNITE, I have just filled the dealer form on your website.">Open WhatsApp Again</a>
-        <button class="btn btn-line" id="againBtn" type="button">Send another enquiry</button>
+        <h3>Request received</h3>
+        <p id="doneLine">Thank you. Our team will send the catalog and get in touch on the number you shared.</p>
+        <a class="btn btn-brass wa" href="#" id="doneWa" data-wa="Hello LAKNITE, I have submitted a catalog request on your website.">Open WhatsApp Again</a>
+        <button class="btn btn-line" id="againBtn" type="button">Send another request</button>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= ABOUT ================= -->
-<section class="band" id="about">
-  <div class="shell split">
-    <div>
-      <div class="marker">About LAKNITE</div>
-      <h2>A winterwear house for every age group.</h2>
-      <p class="lede" style="margin-top:18px">Since 1999, LAKNITE has been manufacturing winterwear and seasonal apparel for Men, Women and Kids. With a commitment to quality, comfort, style and innovation, we offer a comprehensive range of winter essentials including thermals, hoodies, jackets, shawls, sweaters, caps, monkey caps, slippers and fashion accessories.</p>
-      <p class="lede">Our focus on quality manufacturing, product development and long-term business relationships has helped us become a trusted name in the winterwear industry.</p>
-      <div class="facts">
-        <div><b>Ludhiana, Punjab</b><span>Own manufacturing unit</span></div>
-        <div><b>Since 1999</b><span>Over two decades in winterwear</span></div>
-        <div><b>Three departments</b><span>Men · Women · Kids</span></div>
-        <div><b>Wholesale supply</b><span>Retailers, distributors, chain stores</span></div>
-      </div>
-    </div>
-    <div class="about-media">
-      <figure class="frame"><img data-img="f-stitching-hall" alt="LAKNITE production floor"></figure>
-      <figure class="frame"><img data-img="f-inspection" alt="Quality inspection"></figure>
-      <figure class="frame"><img data-img="showroom" alt="Collection display"></figure>
     </div>
   </div>
 </section>
 
 <!-- ================= CONTACT ================= -->
-<section class="band-tight tint" id="contact">
+<section class="band" id="contact">
   <div class="shell">
     <div class="head-block">
       <div class="marker">Contact</div>
-      <h2>Talk to the manufacturer directly.</h2>
+      <h2>Talk to the factory directly.</h2>
     </div>
     <div class="contact-grid">
       <div>
-        <h3 style="margin-bottom:6px">LAKNITE®</h3>
-        <p class="lede" style="margin-bottom:24px">Complete Winterwear Manufacturer for Men, Women &amp; Kids</p>
+        <h3 style="margin-bottom:6px">LAKNITE</h3>
+        <p class="lede" style="margin-bottom:26px">Premium women winterwear manufacturer &amp; wholesale supplier</p>
         <dl class="cinfo">
-          <div class="r"><dt>Address</dt><dd><span data-addr>Ludhiana, Punjab, India</span><small>Full unit address shared with confirmed buyers.</small></dd></div>
+          <div class="r"><dt>Address</dt><dd data-address>Ludhiana, Punjab, India<small>Full unit address is shared with confirmed buyers.</small></dd></div>
           <div class="r"><dt>Phone</dt><dd><a href="#" data-tel></a></dd></div>
-          <div class="r"><dt>WhatsApp</dt><dd><a href="#" class="wa" data-wa="Hello LAKNITE, I would like to enquire about winterwear supply." data-walabel></a></dd></div>
+          <div class="r"><dt>WhatsApp</dt><dd><a href="#" class="wa" data-wa="Hello LAKNITE, I would like to enquire about wholesale women winterwear supply." data-walabel></a></dd></div>
           <div class="r"><dt>Email</dt><dd><a href="#" data-mail></a></dd></div>
           <div class="r"><dt>Hours</dt><dd>Monday to Saturday, 10:00 am – 7:00 pm<small>Sunday closed</small></dd></div>
         </dl>
       </div>
-      <iframe
-        title="LAKNITE location in Ludhiana"
-        src="https://www.google.com/maps?q=Ludhiana%2C%20Punjab%2C%20India&amp;output=embed"
-        width="100%"
-        height="100%"
-        style="border:0;min-height:430px"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen></iframe>
     </div>
   </div>
 </section>
@@ -484,61 +972,294 @@
     <div class="foot-grid">
       <div>
         <img class="mark" data-img="logo-ivory" alt="LAKNITE">
-        <div class="tagline">Quality. Style. Trust.</div>
-        <p>Since 1999 · Complete Winterwear Manufacturer for Men, Women &amp; Kids.</p>
-        <p>Thermals, hoodies, jackets, windcheaters, shawls, sweaters, caps, monkey caps, slippers and seasonal essentials.</p>
-        <div class="social">
-          <a href="#" aria-label="Instagram" data-social="instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.8-.1Zm0 3.4A6.4 6.4 0 1 0 18.4 12 6.4 6.4 0 0 0 12 5.6Zm0 10.6A4.2 4.2 0 1 1 16.2 12 4.2 4.2 0 0 1 12 16.2Zm6.6-10.9a1.5 1.5 0 1 1-1.5-1.5 1.5 1.5 0 0 1 1.5 1.5Z"/></svg></a>
-          <a href="#" aria-label="Facebook" data-social="facebook"><svg viewBox="0 0 24 24"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.3-1.5 1.6-1.5h1.6V3.6c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.3H7.8V13h2.7v8Z"/></svg></a>
-          <a href="#" class="wa" aria-label="WhatsApp" data-wa="Hello LAKNITE, I found you online and would like your winterwear catalogues."><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.8-.6-3.1-1.3-5.1-4.4-5.3-4.6-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .7.5l.9 2.2c.1.2.1.4 0 .6l-.4.6-.3.3c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l.9-1c.2-.2.4-.2.6-.1l2.1 1c.3.1.5.2.5.4.1.1.1.6 0 1.1Z"/></svg></a>
-        </div>
+        <p>Delivering excellence since 1999.</p>
+        <p>Premium women winterwear manufacturer and wholesale supplier. Factory direct supply across India.</p>
       </div>
       <div>
-        <h5>Departments</h5>
+        <h5>Quick links</h5>
         <ul>
-          <li><a href="men.html">Men's winterwear</a></li>
-          <li><a href="women.html">Women's winterwear</a></li>
-          <li><a href="kids.html">Kids winterwear</a></li>
-          <li><a href="index.html#thermals">Thermal innerwear</a></li>
-          <li><a href="index.html#catalogues">Catalogues 2026-27</a></li>
-          <li><a href="index.html#manufacturing">Manufacturing</a></li>
-          <li><a href="index.html#about">About us</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#manufacturing">Manufacturing</a></li>
+          <li><a href="#catalogs">Catalogs</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
       <div>
-        <h5>Product categories</h5>
+        <h5>We supply</h5>
         <ul>
-          <li><a href="men.html#gallery">Hoodies &amp; sweatshirts</a></li>
-          <li><a href="men.html#gallery">Jackets &amp; windcheaters</a></li>
-          <li><a href="women.html#gallery">Shawls, capes &amp; ponchos</a></li>
-          <li><a href="women.html#gallery">Sweaters &amp; cardigans</a></li>
-          <li><a href="kids.html#gallery">Caps &amp; monkey caps</a></li>
-          <li><a href="men.html#gallery">Mufflers</a></li>
-          <li><a href="kids.html#gallery">Kids winter tops &amp; slippers</a></li>
-          <li><a href="index.html#thermals">Thermal innerwear</a></li>
+          <li>Retailers</li><li>Wholesalers</li><li>Distributors</li><li>Chain stores</li><li>Regional traders</li>
         </ul>
       </div>
       <div>
-        <h5>Dealer enquiry</h5>
-        <p data-addr>Ludhiana, Punjab, India</p>
+        <h5>Wholesale enquiries</h5>
+        <p>Ludhiana, Punjab, India</p>
         <p><a href="#" data-tel></a></p>
         <p><a href="#" data-mail></a></p>
-        <a class="btn btn-bronze btn-sm" href="index.html#dealer" style="margin-top:10px">Become a Dealer</a>
+        <a class="btn btn-brass btn-sm wa" href="#" style="margin-top:10px" data-wa="Hello LAKNITE, I would like your wholesale women winterwear catalog.">WhatsApp Us</a>
       </div>
     </div>
     <div class="foot-base">
-      <span>&copy; <span id="yr"></span> LAKNITE®. All rights reserved.</span>
-      <span>Winterwear manufacturer · Wholesale supply only — no retail sale from this website.</span>
+      <span>&copy; <span id="yr"></span> LAKNITE. All rights reserved.</span>
+      <span>Wholesale supply only — no retail sale from this website.</span>
     </div>
   </div>
 </footer>
 
-<a class="wa-float wa" href="#" data-wa="Hello LAKNITE, I would like to enquire about winterwear supply." aria-label="Chat on WhatsApp">
+<a class="wa-float wa" href="#" data-wa="Hello LAKNITE, I would like to enquire about wholesale women winterwear supply." aria-label="Chat on WhatsApp">
   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.8-.6-3.1-1.3-5.1-4.4-5.3-4.6-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .7.5l.9 2.2c.1.2.1.4 0 .6l-.4.6-.3.3c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l.9-1c.2-.2.4-.2.6-.1l2.1 1c.3.1.5.2.5.4.1.1.1.6 0 1.1Z"/></svg>
   <span>WhatsApp</span>
 </a>
 
-<script src="assets/laknite.js"></script>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Article image">
+  <button class="close" id="lbClose">Close</button>
+  <img src="" alt="" id="lbImg">
+  <div class="cap" id="lbCap"></div>
+</div>
+
+<script>
+/* ============================================================
+   LAKNITE — one place to edit business details.
+   Change these four lines and the whole site updates:
+   phone links, WhatsApp links, email links and displayed text.
+   whatsapp: country code + number, digits only, no + or spaces.
+   ============================================================ */
+/* Image sources. In the folder version these are file paths under images/ —
+   swap any value for your own file to change a picture site-wide. */
+const IMAGES = {
+  "1302": "images/1302.jpg",
+  "1307": "images/1307.jpg",
+  "8401": "images/8401.jpg",
+  "8407": "images/8407.jpg",
+  "8704": "images/8704.jpg",
+  "8705": "images/8705.jpg",
+  "8805": "images/8805.jpg",
+  "8808": "images/8808.jpg",
+  "8809": "images/8809.jpg",
+  "hero-fur-cape": "images/hero-fur-cape.png",
+  "hero-fur-collar": "images/hero-fur-collar.png",
+  "f-cone-winding": "images/f-cone-winding.jpg",
+  "f-cutting-press": "images/f-cutting-press.jpg",
+  "f-drying": "images/f-drying.jpg",
+  "f-folding": "images/f-folding.jpg",
+  "f-inspection": "images/f-inspection.jpg",
+  "f-knitting-cixing": "images/f-knitting-cixing.jpg",
+  "f-knitting-fabric": "images/f-knitting-fabric.jpg",
+  "f-knitting-flat": "images/f-knitting-flat.jpg",
+  "f-material-store": "images/f-material-store.jpg",
+  "f-pressing": "images/f-pressing.jpg",
+  "f-production-floor": "images/f-production-floor.jpg",
+  "f-stitching-hall": "images/f-stitching-hall.jpg",
+  "f-washing": "images/f-washing.jpg",
+  "f-yarn-prep": "images/f-yarn-prep.jpg",
+  "f-yarn-winding": "images/f-yarn-winding.jpg",
+  "logo-ivory": "images/logo-ivory.png",
+  "logo-navy": "images/logo-navy.png"
+};
+
+const LAKNITE = {
+  phone:        "+91 8439164090",
+  whatsapp:     "918439164090",
+  email:        "info.laknite@gmail.com",
+  address:      "Ludhiana, Punjab, India"
+};
+
+/* Article list — add, remove or reorder freely.
+   To add a new article, copy a line and point img at your file,
+   e.g. img: "images/lk-8810.jpg"  */
+const ARTICLES = [
+  { no:"8809",   img:"8809", name:"Designer embroidered women winterwear", note:"Velvet finish, heavy work" },
+  { no:"8808",   img:"8808", name:"Designer panel women winterwear",       note:"Velvet finish, sequin work" },
+  { no:"8805",   img:"8805", name:"Luxury pattern women winterwear",       note:"Large repeat, rich shade" },
+  { no:"S-8705", img:"8705", name:"Jacquard woollen women winterwear",     note:"Self weave, printed panels" },
+  { no:"S-8704", img:"hero-fur-collar", name:"Fur-collar women winterwear", note:"Open knit, fur trim" },
+  { no:"S-8407", img:"8407", name:"Classic women winterwear",              note:"Woven leaf border" },
+  { no:"S-8401", img:"8401", name:"Fashion stole",              note:"Light weight, motif work" },
+  { no:"S-1307", img:"1307", name:"Soft wool blend women winterwear",      note:"Plain body, floral motifs" },
+  { no:"S-1302", img:"1302", name:"Soft wool blend women winterwear",      note:"Diamond weave, applique" }
+];
+
+document.querySelectorAll("[data-img]").forEach(el => {
+  const src = IMAGES[el.dataset.img];
+  if (src) el.src = src;
+});
+
+const waLink = (text) => "https://wa.me/" + LAKNITE.whatsapp + "?text=" + encodeURIComponent(text);
+
+/* ---- contact details ---- */
+document.querySelectorAll("[data-tel]").forEach(a => { a.href = "tel:" + LAKNITE.phone.replace(/\s/g,""); a.textContent = LAKNITE.phone; });
+document.querySelectorAll("[data-mail]").forEach(a => { a.href = "mailto:" + LAKNITE.email; a.textContent = LAKNITE.email; });
+document.querySelectorAll("[data-walabel]").forEach(a => { a.textContent = LAKNITE.phone; });
+document.querySelectorAll(".wa").forEach(a => {
+  if (a.tagName === "A") { a.href = waLink(a.dataset.wa || "Hello LAKNITE"); a.target = "_blank"; a.rel = "noopener"; }
+});
+document.getElementById("yr").textContent = new Date().getFullYear();
+
+/* ---- featured articles ---- */
+const grid = document.getElementById("prodGrid");
+grid.innerHTML = ARTICLES.map(a => `
+  <article class="prod">
+    <div class="shot" tabindex="0" role="button" aria-label="View article ${a.no} larger" data-full="${IMAGES[a.img]}" data-no="${a.no}">
+      <img src="${IMAGES[a.img]}" alt="LAKNITE ${a.name}, article ${a.no}" loading="lazy">
+      <div class="zoom">View larger</div>
+    </div>
+    <div class="meta"><b>${a.no}</b><span>${a.note}</span></div>
+    <div class="acts">
+      <button data-req="Article ${a.no} — ${a.name}">Request Catalog</button>
+      <button data-wa-msg="Hello LAKNITE, please share the wholesale price for article ${a.no} (${a.name}).">Ask Price</button>
+    </div>
+  </article>`).join("");
+
+/* ---- every catalog / article button opens WhatsApp ---- */
+const reqMsg = (what) => what
+  ? `Hello LAKNITE, please send your wholesale catalog. Interested in: ${what}.`
+  : "Hello LAKNITE, please send your wholesale catalog.";
+
+document.querySelectorAll("a[data-req]").forEach(a => {
+  a.href = waLink(reqMsg(a.dataset.req));
+  a.target = "_blank"; a.rel = "noopener";
+});
+
+document.addEventListener("click", e => {
+  const wa = e.target.closest("[data-wa-msg]");
+  if (wa) { window.open(waLink(wa.dataset.waMsg), "_blank", "noopener"); return; }
+
+  const btn = e.target.closest("button[data-req]");
+  if (btn) { window.open(waLink(reqMsg(btn.dataset.req)), "_blank", "noopener"); }
+});
+
+/* ---- hero slideshow: new left → original middle → new right ---- */
+const heroSlides = [...document.querySelectorAll(".hero-slider .hero-slide")];
+if (heroSlides.length) {
+  let heroIndex = 0;
+  heroSlides[0].classList.add("active");
+  if (heroSlides.length > 1) window.setInterval(() => {
+    heroSlides[heroIndex].classList.remove("active");
+    heroIndex = (heroIndex + 1) % heroSlides.length;
+    heroSlides[heroIndex].classList.add("active");
+  }, 3500);
+}
+
+/* ---- mobile menu ---- */
+const burger = document.getElementById("burger"), mnav = document.getElementById("mnav");
+burger.addEventListener("click", () => {
+  const open = mnav.classList.toggle("open");
+  burger.setAttribute("aria-expanded", open);
+});
+mnav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
+  mnav.classList.remove("open"); burger.setAttribute("aria-expanded", false);
+}));
+
+/* ---- nav highlight ---- */
+const links = [...document.querySelectorAll(".nav a")];
+const sections = links.map(l => document.querySelector(l.getAttribute("href"))).filter(Boolean);
+if ("IntersectionObserver" in window) {
+  const navObs = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (en.isIntersecting) {
+        links.forEach(l => l.classList.toggle("on", l.getAttribute("href") === "#" + en.target.id));
+      }
+    });
+  }, { rootMargin: "-45% 0px -50% 0px" });
+  sections.forEach(s => navObs.observe(s));
+}
+
+/* ---- counters ---- */
+const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+function runCount(el) {
+  const target = +el.dataset.count, suffix = el.dataset.suffix || "";
+  if (reduce) { el.textContent = target + suffix; return; }
+  const dur = 1400, t0 = performance.now();
+  const tick = now => {
+    const p = Math.min((now - t0) / dur, 1);
+    el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3))) + suffix;
+    if (p < 1) requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+}
+const statsEl = document.getElementById("stats");
+if ("IntersectionObserver" in window) {
+  const so = new IntersectionObserver((en, obs) => {
+    if (en[0].isIntersecting) { statsEl.querySelectorAll("[data-count]").forEach(runCount); obs.disconnect(); }
+  }, { threshold: .35 });
+  so.observe(statsEl);
+} else { statsEl.querySelectorAll("[data-count]").forEach(runCount); }
+
+/* ---- enquiry form ---- */
+const form = document.getElementById("enq"), done = document.getElementById("done");
+const showErr = (name, msg) => { const s = form.querySelector(`[data-err="${name}"]`); if (s) s.textContent = msg || ""; };
+
+form.addEventListener("submit", e => {
+  e.preventDefault();
+  const d = Object.fromEntries(new FormData(form).entries());
+  let ok = true;
+  ["name","business","city","phone"].forEach(k => showErr(k, ""));
+
+  if (!d.name.trim())      { showErr("name", "Enter your name"); ok = false; }
+  if (!d.business.trim())  { showErr("business", "Enter your business name"); ok = false; }
+  if (!d.city.trim())      { showErr("city", "Enter your city"); ok = false; }
+  const digits = (d.phone || "").replace(/\D/g, "");
+  if (digits.length < 10)  { showErr("phone", "Enter a 10 digit phone number"); ok = false; }
+  if (!ok) { form.querySelector(".err:not(:empty)")?.previousElementSibling?.focus(); return; }
+
+  /* The details are packaged into a WhatsApp message and the chat opens straight
+     away. To also store leads, post this object to your own endpoint here. */
+  const summary =
+    `New catalog request from the LAKNITE website\n\n` +
+    `Name: ${d.name}\nBusiness: ${d.business}\nCity: ${d.city}\nType: ${d.type}\n` +
+    `Phone: ${d.phone}\nWhatsApp: ${d.whatsapp || d.phone}\n` +
+    `Requirement: ${d.requirement || "—"}`;
+
+  const link = waLink(summary);
+  document.getElementById("doneWa").href = link;
+  document.getElementById("doneLine").textContent =
+    `Thank you, ${d.name.split(" ")[0]}. WhatsApp is opening with your details ready to send. If it did not open, use the button below.`;
+  window.open(link, "_blank", "noopener");
+  form.style.display = "none";
+  done.classList.add("show");
+  done.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "center" });
+});
+
+document.getElementById("againBtn").addEventListener("click", () => {
+  form.reset(); form.style.display = ""; done.classList.remove("show");
+  document.getElementById("f-name").focus();
+});
+
+/* ---- lightbox: works for article photos and factory photos ---- */
+const lb = document.getElementById("lb"), lbImg = document.getElementById("lbImg"), lbCap = document.getElementById("lbCap");
+function openLb(src, caption) {
+  lbImg.src = src; lbCap.textContent = caption || ""; lb.classList.add("open");
+  document.body.style.overflow = "hidden"; document.getElementById("lbClose").focus();
+}
+function closeLb() { lb.classList.remove("open"); lbImg.src = ""; document.body.style.overflow = ""; }
+
+function figureFrom(el) {
+  const shot = el.closest(".shot");
+  if (shot) return { src: shot.dataset.full, cap: "Article " + shot.dataset.no };
+  const photo = el.closest(".photo");
+  if (photo) {
+    const img = photo.querySelector("img");
+    const cap = photo.querySelector("figcaption");
+    return { src: img && img.src, cap: cap ? cap.textContent : (img ? img.alt : "") };
+  }
+  return null;
+}
+
+document.addEventListener("click", e => {
+  if (e.target.closest(".lb")) return;
+  const f = figureFrom(e.target);
+  if (f && f.src) openLb(f.src, f.cap);
+});
+document.addEventListener("keydown", e => {
+  if (e.key === "Enter" || e.key === " ") {
+    const f = figureFrom(e.target);
+    if (f && f.src && (e.target.matches(".shot, .photo"))) { e.preventDefault(); openLb(f.src, f.cap); }
+  }
+  if (e.key === "Escape" && lb.classList.contains("open")) closeLb();
+});
+document.getElementById("lbClose").addEventListener("click", closeLb);
+lb.addEventListener("click", e => { if (e.target === lb) closeLb(); });
+</script>
+
 </body>
 </html>
